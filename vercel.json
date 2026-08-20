@@ -1,5 +1,5 @@
 {
-  "outputDirectory": "dashboard-react/dist",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "rewrites": [
     {

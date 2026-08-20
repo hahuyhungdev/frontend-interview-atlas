@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "build": "npm run build --prefix dashboard-react",
+    "build": "npm run build --prefix dashboard-react && cp -r dashboard-react/dist ./dist",
     "start": "node server.js",
     "dev": "npm run dev --prefix dashboard-react",
     "crawl": "./run_crawler.sh",
