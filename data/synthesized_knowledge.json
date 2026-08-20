@@ -1,0 +1,2286 @@
+{
+  "by_company": {
+    "BrowserStack": [
+      {
+        "title": "BrowserStack Frontend Developer Interview Experience",
+        "url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123",
+        "date": "August 7, 2026",
+        "role": "Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "React",
+            "company": "BrowserStack",
+            "role": "Frontend Engineer",
+            "question": "I recently came across an interview experience for the Frontend Developer role at BrowserStack. The interview process was heavily focused on frontend fundamentals, React, Next.js, CSS, UI implementation, and frontend system design.",
+            "source_title": "BrowserStack Frontend Developer Interview Experience",
+            "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+          },
+          {
+            "category": "General / Other",
+            "company": "BrowserStack",
+            "role": "Frontend Engineer",
+            "question": "The primary objective was to match the design as closely as possible.",
+            "source_title": "BrowserStack Frontend Developer Interview Experience",
+            "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+          },
+          {
+            "category": "React",
+            "company": "BrowserStack",
+            "role": "Frontend Engineer",
+            "question": "#### Design an Autocomplete Component The interviewer asked me to explain how I would build an autocomplete search component.",
+            "source_title": "BrowserStack Frontend Developer Interview Experience",
+            "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+          },
+          {
+            "category": "React",
+            "company": "BrowserStack",
+            "role": "Frontend Engineer",
+            "question": "This question evaluated not just implementation skills but also knowledge of frontend design systems and reusable component architecture.",
+            "source_title": "BrowserStack Frontend Developer Interview Experience",
+            "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+          }
+        ]
+      }
+    ],
+    "MakeMyTrip": [
+      {
+        "title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26",
+        "date": "July 21, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "JavaScript (Core)",
+            "company": "MakeMyTrip",
+            "role": "Senior Frontend Engineer",
+            "question": "* – Question 2: Implement Retry Promise Recently, I came across another frontend interview experience for the Senior Software Engineer-2 (Frontend) role at MakeMyTrip. Although I had previously shared an interview experience from MMT, this process contained a different set of discussions and highlighted the kind of practical frontend problems senior engineers are expected to solve.",
+            "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "MakeMyTrip",
+            "role": "Senior Frontend Engineer",
+            "question": "#### Question 2: Implement Retry Promise Implement a function:",
+            "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "MakeMyTrip",
+            "role": "Senior Frontend Engineer",
+            "question": "Implement a function: ```javascript",
+            "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+          },
+          {
+            "category": "CSS & HTML",
+            "company": "MakeMyTrip",
+            "role": "Senior Frontend Engineer",
+            "question": "Implement a Reddit-style comment section. Requirements:",
+            "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "MakeMyTrip",
+            "role": "Senior Frontend Engineer",
+            "question": "Implement: ```javascript",
+            "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+          }
+        ]
+      },
+      {
+        "title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819",
+        "date": "May 23, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "JavaScript (Core)",
+            "company": "MakeMyTrip",
+            "role": "Senior Frontend Engineer",
+            "question": "Problem Statement ```javascript",
+            "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+          },
+          {
+            "category": "General / Other",
+            "company": "MakeMyTrip",
+            "role": "Senior Frontend Engineer",
+            "question": "The interviewer asked to implement: * With recursion",
+            "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "MakeMyTrip",
+            "role": "Senior Frontend Engineer",
+            "question": "#### Question 2: Implement promiseAllSync without async/await This was one of the most interesting questions.",
+            "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+          },
+          {
+            "category": "General / Other",
+            "company": "MakeMyTrip",
+            "role": "Senior Frontend Engineer",
+            "question": "This is a very common frontend machine coding question. Expected concepts:",
+            "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+          },
+          {
+            "category": "React",
+            "company": "MakeMyTrip",
+            "role": "Senior Frontend Engineer",
+            "question": "Problem Statement: Build a React feature where: * Clicking Add creates a new progress bar",
+            "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+          }
+        ]
+      }
+    ],
+    "Okta": [
+      {
+        "title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+        "url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a",
+        "date": "July 16, 2026",
+        "role": "Frontend Engineer II (SDE-2)",
+        "salary": "45 LPA",
+        "coding_questions": [
+          {
+            "category": "General / Other",
+            "company": "Okta",
+            "role": "Frontend Engineer II (SDE-2)",
+            "question": "* 3 Problem Statement * 4 Requirements * 5 My Approach",
+            "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+            "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+          },
+          {
+            "category": "React",
+            "company": "Okta",
+            "role": "Frontend Engineer II (SDE-2)",
+            "question": "The interviewer provided a React boilerplate and asked me to implement the following.",
+            "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+            "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+          },
+          {
+            "category": "General / Other",
+            "company": "Okta",
+            "role": "Frontend Engineer II (SDE-2)",
+            "question": "### Problem Statement Input: An integer n",
+            "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+            "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+          },
+          {
+            "category": "General / Other",
+            "company": "Okta",
+            "role": "Frontend Engineer II (SDE-2)",
+            "question": "The interviewer was more interested in why I chose a particular implementation than simply getting the correct output.",
+            "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+            "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+          },
+          {
+            "category": "System Design & Architecture",
+            "company": "Okta",
+            "role": "Frontend Engineer II (SDE-2)",
+            "question": "#### Problem Statement Design a content publishing platform where:",
+            "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+            "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+          }
+        ]
+      },
+      {
+        "title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+        "url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919",
+        "date": "June 2, 2026",
+        "role": "Frontend Engineer II (SDE-2)",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "React",
+            "company": "Okta",
+            "role": "Frontend Engineer II (SDE-2)",
+            "question": "* – Problem Statement * ReactJS fundamentals and component design * Core JavaScript concepts and browser internals",
+            "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+            "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+          },
+          {
+            "category": "React",
+            "company": "Okta",
+            "role": "Frontend Engineer II (SDE-2)",
+            "question": "#### Problem Statement The application should accept a number n from an input box and render an n × n grid.",
+            "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+            "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+          },
+          {
+            "category": "General / Other",
+            "company": "Okta",
+            "role": "Frontend Engineer II (SDE-2)",
+            "question": "* Scalable implementation One important lesson from this round was that interviewers often care more about design decisions and trade-offs than simply producing a working solution.",
+            "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+            "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+          },
+          {
+            "category": "General / Other",
+            "company": "Okta",
+            "role": "Frontend Engineer II (SDE-2)",
+            "question": "* Readability vs implementation",
+            "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+            "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+          },
+          {
+            "category": "System Design & Architecture",
+            "company": "Okta",
+            "role": "Frontend Engineer II (SDE-2)",
+            "question": "#### Problem Statement Design a content publishing platform where:",
+            "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+            "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+          }
+        ]
+      }
+    ],
+    "Wayfair": [
+      {
+        "title": "Wayfair Frontend Interview Experience | SDE-2",
+        "url": "https://medium.com/frontend-army/wayfair-frontend-interview-experience-sde-2-37acf597f8e2",
+        "date": "July 19, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "React",
+            "company": "Wayfair",
+            "role": "Senior Frontend Engineer",
+            "question": "Shortly after applying, I received a code assessment consisting of two coding questions: * React question (don't remember the exact problem)",
+            "source_title": "Wayfair Frontend Interview Experience | SDE-2",
+            "source_url": "https://medium.com/frontend-army/wayfair-frontend-interview-experience-sde-2-37acf597f8e2"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "Wayfair",
+            "role": "Senior Frontend Engineer",
+            "question": "* JavaScript question, which was similar to implementing an Observer Pattern/EventEmitter Overall, the assessment was Easy to Medium in difficulty and was fairly straightforward.",
+            "source_title": "Wayfair Frontend Interview Experience | SDE-2",
+            "source_url": "https://medium.com/frontend-army/wayfair-frontend-interview-experience-sde-2-37acf597f8e2"
+          },
+          {
+            "category": "General / Other",
+            "company": "Wayfair",
+            "role": "Senior Frontend Engineer",
+            "question": "The task was to implement filtering functionality based on the selected option so that the reviews would update dynamically.",
+            "source_title": "Wayfair Frontend Interview Experience | SDE-2",
+            "source_url": "https://medium.com/frontend-army/wayfair-frontend-interview-experience-sde-2-37acf597f8e2"
+          }
+        ]
+      }
+    ],
+    "LinkedIn": [
+      {
+        "title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+        "url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b",
+        "date": "August 9, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "JavaScript (Core)",
+            "company": "LinkedIn",
+            "role": "Senior Frontend Engineer",
+            "question": "Unlike interviews that focus heavily on Data Structures & Algorithms, LinkedIn evaluates how well you can build scalable user interfaces, reason about browser behavior, write clean JavaScript, and make sound engineering decisions.",
+            "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+            "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "LinkedIn",
+            "role": "Senior Frontend Engineer",
+            "question": "#### Question 2: Implement Memoization Implement a reusable memoization utility.",
+            "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+            "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "LinkedIn",
+            "role": "Senior Frontend Engineer",
+            "question": "Implement a reusable memoization utility.",
+            "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+            "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+          },
+          {
+            "category": "React",
+            "company": "LinkedIn",
+            "role": "Senior Frontend Engineer",
+            "question": "#### Question: Build a Tooltip Component Initially implement using only:",
+            "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+            "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "LinkedIn",
+            "role": "Senior Frontend Engineer",
+            "question": "Initially implement using only: Later extend it using JavaScript.",
+            "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+            "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+          }
+        ]
+      }
+    ],
+    "JioHotstar": [
+      {
+        "title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+        "url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d",
+        "date": "July 28, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "48 LPA",
+        "coding_questions": [
+          {
+            "category": "General / Other",
+            "company": "JioHotstar",
+            "role": "Senior Frontend Engineer",
+            "question": "* – Coding Questions * 4 Round 2: Machine Coding * – Machine Coding Task",
+            "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+            "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "JioHotstar",
+            "role": "Senior Frontend Engineer",
+            "question": "#### Coding Questions I was asked two JavaScript coding questions that tested problem-solving skills along with a solid understanding of core JavaScript concepts.",
+            "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+            "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "JioHotstar",
+            "role": "Senior Frontend Engineer",
+            "question": "I was asked two JavaScript coding questions that tested problem-solving skills along with a solid understanding of core JavaScript concepts. The discussion was interactive, and the interviewer appreciated my understanding of JavaScript fundamentals.",
+            "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+            "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+          },
+          {
+            "category": "React",
+            "company": "JioHotstar",
+            "role": "Senior Frontend Engineer",
+            "question": "The interviewer wasn't only interested in whether the component worked correctly but also in the design decisions behind the implementation.",
+            "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+            "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+          }
+        ]
+      }
+    ],
+    "PayPal": [
+      {
+        "title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+        "url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf",
+        "date": "July 30, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "52 LPA",
+        "coding_questions": [
+          {
+            "category": "JavaScript (Core)",
+            "company": "PayPal",
+            "role": "Senior Frontend Engineer",
+            "question": "Implement a utility function similar to groupBy(). Example:",
+            "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+            "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+          },
+          {
+            "category": "General / Other",
+            "company": "PayPal",
+            "role": "Senior Frontend Engineer",
+            "question": "Implement a Task Scheduler class supporting: * Add task",
+            "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+            "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+          },
+          {
+            "category": "General / Other",
+            "company": "PayPal",
+            "role": "Senior Frontend Engineer",
+            "question": "The focus was on clean class design rather than complex algorithms.",
+            "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+            "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+          },
+          {
+            "category": "General / Other",
+            "company": "PayPal",
+            "role": "Senior Frontend Engineer",
+            "question": "### Round 2: Data Structures & Algorithms This round focused entirely on problem-solving.",
+            "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+            "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+          },
+          {
+            "category": "Algorithms & Data Structures",
+            "company": "PayPal",
+            "role": "Senior Frontend Engineer",
+            "question": "Implement an LRU Cache supporting: * get()",
+            "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+            "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+          }
+        ]
+      }
+    ],
+    "Oracle": [
+      {
+        "title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+        "url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc",
+        "date": "August 4, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "React",
+            "company": "Oracle",
+            "role": "Senior Frontend Engineer",
+            "question": "* – Problem Statement I recently came across an interview experience for a Senior Frontend Engineer role at Oracle. The interview process was concise but highly focused on JavaScript fundamentals, React concepts, design patterns, and practical coding skills.",
+            "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+            "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+          },
+          {
+            "category": "React",
+            "company": "Oracle",
+            "role": "Senior Frontend Engineer",
+            "question": "* Data Structures & Algorithms * JavaScript Fundamentals * React",
+            "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+            "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+          },
+          {
+            "category": "Algorithms & Data Structures",
+            "company": "Oracle",
+            "role": "Senior Frontend Engineer",
+            "question": "#### Problem Statement Given two strings, find the length of the longest substring present in both strings.",
+            "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+            "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "Oracle",
+            "role": "Senior Frontend Engineer",
+            "question": "#### Question 1: Implement a Custom map() Implement your own version of Array.prototype.map().",
+            "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+            "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "Oracle",
+            "role": "Senior Frontend Engineer",
+            "question": "Implement your own version of Array.prototype.map().",
+            "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+            "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+          }
+        ]
+      },
+      {
+        "title": "Oracle Frontend Interview Experience | 2026 — On Campus",
+        "url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-2026-on-campus-8f198b47ba6e",
+        "date": "",
+        "role": "Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": []
+      },
+      {
+        "title": "Oracle Frontend Interview Experience | 2026 — On Campus",
+        "url": "https://medium.com/@gouravhammad477/oracle-frontend-interview-experience-2026-on-campus-8f198b47ba6e",
+        "date": "",
+        "role": "Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": []
+      }
+    ],
+    "Tessell": [
+      {
+        "title": "Tessell Frontend Interview Experience | 52 LPA | Senior Frontend Engineer",
+        "url": "https://medium.com/frontend-army/tessell-frontend-interview-experience-52-lpa-senior-frontend-engineer-40bd61dd4259",
+        "date": "July 23, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "52 LPA",
+        "coding_questions": [
+          {
+            "category": "JavaScript (Core)",
+            "company": "Tessell",
+            "role": "Senior Frontend Engineer",
+            "question": "### Round 3: Data Structures & Algorithms The next round evaluated problem-solving skills using JavaScript.",
+            "source_title": "Tessell Frontend Interview Experience | 52 LPA | Senior Frontend Engineer",
+            "source_url": "https://medium.com/frontend-army/tessell-frontend-interview-experience-52-lpa-senior-frontend-engineer-40bd61dd4259"
+          },
+          {
+            "category": "General / Other",
+            "company": "Tessell",
+            "role": "Senior Frontend Engineer",
+            "question": "* Trade-offs considered while implementing features The discussion focused heavily on practical engineering experience rather than textbook knowledge.",
+            "source_title": "Tessell Frontend Interview Experience | 52 LPA | Senior Frontend Engineer",
+            "source_url": "https://medium.com/frontend-army/tessell-frontend-interview-experience-52-lpa-senior-frontend-engineer-40bd61dd4259"
+          }
+        ]
+      }
+    ],
+    "Amazon": [
+      {
+        "title": "Amazon Frontend Engineer Interview Experience | 2026",
+        "url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa",
+        "date": "August 10, 2026",
+        "role": "Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "General / Other",
+            "company": "Amazon",
+            "role": "Frontend Engineer",
+            "question": "I recently came across an interview experience for the Frontend Engineer I role at Amazon India. The interview process combined algorithmic… ![](/img/medium/700/1*KIURdaf2LtlJ_a6-tmqfYg.png)",
+            "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+            "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+          },
+          {
+            "category": "General / Other",
+            "company": "Amazon",
+            "role": "Frontend Engineer",
+            "question": "I recently came across an interview experience for the Frontend Engineer I role at Amazon India. The interview process combined algorithmic problem-solving with frontend development, assessing both coding fundamentals and UI implementation skills.",
+            "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+            "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+          },
+          {
+            "category": "General / Other",
+            "company": "Amazon",
+            "role": "Frontend Engineer",
+            "question": "* Data Structures & Algorithms * Object-Oriented Programming * Computer Networks",
+            "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+            "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+          },
+          {
+            "category": "CSS & HTML",
+            "company": "Amazon",
+            "role": "Frontend Engineer",
+            "question": "* UI implementation * Code quality The exact problem statement varied, but the goal was to build a clean, responsive, and maintainable frontend solution.",
+            "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+            "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+          },
+          {
+            "category": "CSS & HTML",
+            "company": "Amazon",
+            "role": "Frontend Engineer",
+            "question": "The exact problem statement varied, but the goal was to build a clean, responsive, and maintainable frontend solution. After completing the assignment, I was invited for the technical interview rounds.",
+            "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+            "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+          }
+        ]
+      }
+    ],
+    "General": [
+      {
+        "title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+        "url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714",
+        "date": "July 15, 2026",
+        "role": "Frontend Engineer",
+        "salary": "55 LPA",
+        "coding_questions": [
+          {
+            "category": "CSS & HTML",
+            "company": "General",
+            "role": "Frontend Engineer",
+            "question": "A Search Bar with a Debounce feature has been implemented in the Travel App frontend to enhance the user experience when searching for apartments. This feature reduces unnecessary API calls by delaying them until the user pauses typing, ensuring better performance and responsiveness.",
+            "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+            "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+          },
+          {
+            "category": "React",
+            "company": "General",
+            "role": "Frontend Engineer",
+            "question": "The implementation is moving in the right direction, but the debounce hook is functionally incorrect because it updates the debounced value immediately.",
+            "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+            "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Frontend Engineer",
+            "question": "Additionally, the implementation lacks handling for race conditions (stale responses overwriting newer ones), loading and error UI, proper memoization of callbacks, and uses an unrealistically low debounce delay. These issues affect correctness and user experience, so I'd request changes before approving the pull request.",
+            "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+            "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+          },
+          {
+            "category": "React",
+            "company": "General",
+            "role": "Frontend Engineer",
+            "question": "\"We're building a reusable Tabs component for Moniepoint's design system. It will be used across multiple product surfaces — dashboards, settings pages, onboarding flows. I'd like you to implement it as a compound component in React and TypeScript, using a custom hook internally to manage state.",
+            "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+            "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Frontend Engineer",
+            "question": "// TODO: implement // Should return: activeTab, setActiveTab, registerTab, tabs }",
+            "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+            "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+          }
+        ]
+      },
+      {
+        "title": "Goibibo Frontend Interview Experience | SSE-2",
+        "url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4",
+        "date": "June 7, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "React",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "* – Question 2: Implement promiseAllSync * – Question 3: React Search Component * 5 Hey New Readers 👋",
+            "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "The interviewer asked me to implement the solution: * Using recursion",
+            "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "#### Question 2: Implement promiseAllSync The interviewer provided a function that returned promises with different completion times and asked me to implement a custom function similar to Promise.all.",
+            "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "The interviewer provided a function that returned promises with different completion times and asked me to implement a custom function similar to Promise.all.",
+            "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "Implement: ```javascript",
+            "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+            "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+          }
+        ]
+      },
+      {
+        "title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+        "url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2",
+        "date": "May 24, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "* – JavaScript Coding Questions * – JavaScript Fundamentals Recently, I interviewed for the SDE 2 Frontend role at JioHotstar. I wanted to share the complete experience because the process was quite long, involved multiple reschedules, and ultimately ended in rejection for reasons that did not seem related to technical performance.",
+            "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+            "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "* Frontend challenges faced during implementation This discussion felt more practical than theoretical, which I appreciated.",
+            "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+            "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "#### JavaScript Coding Questions I was asked two JavaScript coding questions.",
+            "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+            "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "I was asked two JavaScript coding questions. The interview also included discussions around:",
+            "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+            "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "This round was more frontend engineering-focused and involved practical UI implementation.",
+            "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+            "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+          }
+        ]
+      },
+      {
+        "title": "My CoinDCX Frontend Interview Experience | SSE-1",
+        "url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c",
+        "date": "July 9, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "* – Question 1: Implement Array.prototype.flat() * – Prototype & Prototype Chaining Discussion * – Prototype Relationships",
+            "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+            "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+          },
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "#### Question 1: Implement Array.prototype.flat() The interviewer asked me to create my own implementation of:",
+            "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+            "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "The interviewer asked me to create my own implementation of: Example:",
+            "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+            "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+          },
+          {
+            "category": "Algorithms & Data Structures",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "The implementation required recursive traversal of nested arrays.",
+            "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+            "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "Implement all missing functionality, including: * Add Product",
+            "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+            "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+          }
+        ]
+      },
+      {
+        "title": "Cult.fit Frontend Interview Experience | SDE-2",
+        "url": "https://medium.com/frontend-army/cult-fit-frontend-interview-experience-sde-2-d1d8834aae3c",
+        "date": "June 5, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "I was also asked two JavaScript coding questions. The discussion was interactive and focused more on understanding my problem-solving approach rather than simply reaching the final answer.",
+            "source_title": "Cult.fit Frontend Interview Experience | SDE-2",
+            "source_url": "https://medium.com/frontend-army/cult-fit-frontend-interview-experience-sde-2-d1d8834aae3c"
+          },
+          {
+            "category": "React",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "The implementation itself was only one part of the discussion. The interviewer spent significant time evaluating: * Component design decisions",
+            "source_title": "Cult.fit Frontend Interview Experience | SDE-2",
+            "source_url": "https://medium.com/frontend-army/cult-fit-frontend-interview-experience-sde-2-d1d8834aae3c"
+          }
+        ]
+      },
+      {
+        "title": "Creta Frontend Interview Experience | Remote Role",
+        "url": "https://medium.com/frontend-army/creta-frontend-interview-experience-remote-role-0597a212f72a",
+        "date": "July 8, 2026",
+        "role": "Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": []
+      },
+      {
+        "title": "Triple A Frontend Recruitment Exercise",
+        "url": "https://medium.com/frontend-army/triple-a-frontend-recruitment-exercise-442abd66ca4f",
+        "date": "June 10, 2026",
+        "role": "Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "JavaScript (Core)",
+            "company": "General",
+            "role": "Frontend Engineer",
+            "question": "* The backend is provided and already implements the described API. The server will be running on the command: ```javascript docker run -p 8860:8860 tripleaio/transfer-api-server",
+            "source_title": "Triple A Frontend Recruitment Exercise",
+            "source_url": "https://medium.com/frontend-army/triple-a-frontend-recruitment-exercise-442abd66ca4f"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Frontend Engineer",
+            "question": "* Implement basic validation for user input. * Handle backend API integration gracefully, including proper error handling",
+            "source_title": "Triple A Frontend Recruitment Exercise",
+            "source_url": "https://medium.com/frontend-army/triple-a-frontend-recruitment-exercise-442abd66ca4f"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "url": "https://medium.com/frontend-army/ever-quint-frontend-interview-experience-screening-round-fa1987de58b9",
+        "date": "",
+        "role": "Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": []
+      },
+      {
+        "title": "Paytm Money Frontend Interview Experience | SSE 2026",
+        "url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94",
+        "date": "May 17, 2026",
+        "role": "Senior Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": [
+          {
+            "category": "React",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "This round focused on JavaScript fundamentals along with practical React implementation.",
+            "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+            "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "#### 2. Implement func(1)(2)(3)…() This was an extension of currying.",
+            "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+            "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "* Diffing algorithm * Reconciliation This is a very common senior frontend topic.",
+            "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+            "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "This round was more implementation-heavy.",
+            "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+            "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+          },
+          {
+            "category": "General / Other",
+            "company": "General",
+            "role": "Senior Frontend Engineer",
+            "question": "This was one of the most important machine coding questions. Requirements:",
+            "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+            "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+          }
+        ]
+      }
+    ],
+    "Apple": [
+      {
+        "title": "My Apple Frontend Interview Experience | 85 LPA | Hyderabad",
+        "url": "https://medium.com/@gouravhammad477/my-apple-frontend-interview-experience-85-lpa-hyderabad-ecbd6cb92d29",
+        "date": "July 28, 2025",
+        "role": "Senior Frontend Engineer",
+        "salary": "85 LPA",
+        "coding_questions": []
+      },
+      {
+        "title": "My Apple Frontend Interview Experience | Frontend Engineer | Hyderabad",
+        "url": "https://medium.com/@gouravhammad477/my-apple-frontend-interview-experience-frontend-engineer-hyderabad-a70dcf4d88fc",
+        "date": "July 30, 2025",
+        "role": "Frontend Engineer",
+        "salary": "N/A",
+        "coding_questions": []
+      }
+    ],
+    "Deel": [
+      {
+        "title": "My Deel Frontend Interview Experience | $80K | Frontend Engineer (React.js)",
+        "url": "https://medium.com/@gouravhammad477/my-deel-frontend-interview-experience-80k-frontend-engineer-react-js-cc5df7eb5963",
+        "date": "June 15, 2025",
+        "role": "Remote Frontend Engineer",
+        "salary": "$80K (Remote)",
+        "coding_questions": []
+      }
+    ]
+  },
+  "by_category": {
+    "React": [
+      {
+        "category": "React",
+        "company": "BrowserStack",
+        "role": "Frontend Engineer",
+        "question": "I recently came across an interview experience for the Frontend Developer role at BrowserStack. The interview process was heavily focused on frontend fundamentals, React, Next.js, CSS, UI implementation, and frontend system design.",
+        "source_title": "BrowserStack Frontend Developer Interview Experience",
+        "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+      },
+      {
+        "category": "React",
+        "company": "BrowserStack",
+        "role": "Frontend Engineer",
+        "question": "#### Design an Autocomplete Component The interviewer asked me to explain how I would build an autocomplete search component.",
+        "source_title": "BrowserStack Frontend Developer Interview Experience",
+        "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+      },
+      {
+        "category": "React",
+        "company": "BrowserStack",
+        "role": "Frontend Engineer",
+        "question": "This question evaluated not just implementation skills but also knowledge of frontend design systems and reusable component architecture.",
+        "source_title": "BrowserStack Frontend Developer Interview Experience",
+        "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+      },
+      {
+        "category": "React",
+        "company": "Okta",
+        "role": "Frontend Engineer II (SDE-2)",
+        "question": "The interviewer provided a React boilerplate and asked me to implement the following.",
+        "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+        "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+      },
+      {
+        "category": "React",
+        "company": "Wayfair",
+        "role": "Senior Frontend Engineer",
+        "question": "Shortly after applying, I received a code assessment consisting of two coding questions: * React question (don't remember the exact problem)",
+        "source_title": "Wayfair Frontend Interview Experience | SDE-2",
+        "source_url": "https://medium.com/frontend-army/wayfair-frontend-interview-experience-sde-2-37acf597f8e2"
+      },
+      {
+        "category": "React",
+        "company": "LinkedIn",
+        "role": "Senior Frontend Engineer",
+        "question": "#### Question: Build a Tooltip Component Initially implement using only:",
+        "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+        "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+      },
+      {
+        "category": "React",
+        "company": "JioHotstar",
+        "role": "Senior Frontend Engineer",
+        "question": "The interviewer wasn't only interested in whether the component worked correctly but also in the design decisions behind the implementation.",
+        "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+        "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+      },
+      {
+        "category": "React",
+        "company": "Oracle",
+        "role": "Senior Frontend Engineer",
+        "question": "* – Problem Statement I recently came across an interview experience for a Senior Frontend Engineer role at Oracle. The interview process was concise but highly focused on JavaScript fundamentals, React concepts, design patterns, and practical coding skills.",
+        "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+        "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+      },
+      {
+        "category": "React",
+        "company": "Oracle",
+        "role": "Senior Frontend Engineer",
+        "question": "* Data Structures & Algorithms * JavaScript Fundamentals * React",
+        "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+        "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+      },
+      {
+        "category": "React",
+        "company": "General",
+        "role": "Frontend Engineer",
+        "question": "The implementation is moving in the right direction, but the debounce hook is functionally incorrect because it updates the debounced value immediately.",
+        "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+        "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+      },
+      {
+        "category": "React",
+        "company": "General",
+        "role": "Frontend Engineer",
+        "question": "\"We're building a reusable Tabs component for Moniepoint's design system. It will be used across multiple product surfaces — dashboards, settings pages, onboarding flows. I'd like you to implement it as a compound component in React and TypeScript, using a custom hook internally to manage state.",
+        "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+        "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+      },
+      {
+        "category": "React",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "* – Question 2: Implement promiseAllSync * – Question 3: React Search Component * 5 Hey New Readers 👋",
+        "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+      },
+      {
+        "category": "React",
+        "company": "MakeMyTrip",
+        "role": "Senior Frontend Engineer",
+        "question": "Problem Statement: Build a React feature where: * Clicking Add creates a new progress bar",
+        "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+      },
+      {
+        "category": "React",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "The implementation itself was only one part of the discussion. The interviewer spent significant time evaluating: * Component design decisions",
+        "source_title": "Cult.fit Frontend Interview Experience | SDE-2",
+        "source_url": "https://medium.com/frontend-army/cult-fit-frontend-interview-experience-sde-2-d1d8834aae3c"
+      },
+      {
+        "category": "React",
+        "company": "Okta",
+        "role": "Frontend Engineer II (SDE-2)",
+        "question": "* – Problem Statement * ReactJS fundamentals and component design * Core JavaScript concepts and browser internals",
+        "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+        "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+      },
+      {
+        "category": "React",
+        "company": "Okta",
+        "role": "Frontend Engineer II (SDE-2)",
+        "question": "#### Problem Statement The application should accept a number n from an input box and render an n × n grid.",
+        "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+        "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+      },
+      {
+        "category": "React",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "This round focused on JavaScript fundamentals along with practical React implementation.",
+        "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+        "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+      }
+    ],
+    "JavaScript (Core)": [
+      {
+        "category": "JavaScript (Core)",
+        "company": "MakeMyTrip",
+        "role": "Senior Frontend Engineer",
+        "question": "* – Question 2: Implement Retry Promise Recently, I came across another frontend interview experience for the Senior Software Engineer-2 (Frontend) role at MakeMyTrip. Although I had previously shared an interview experience from MMT, this process contained a different set of discussions and highlighted the kind of practical frontend problems senior engineers are expected to solve.",
+        "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "MakeMyTrip",
+        "role": "Senior Frontend Engineer",
+        "question": "#### Question 2: Implement Retry Promise Implement a function:",
+        "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "MakeMyTrip",
+        "role": "Senior Frontend Engineer",
+        "question": "Implement a function: ```javascript",
+        "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "MakeMyTrip",
+        "role": "Senior Frontend Engineer",
+        "question": "Implement: ```javascript",
+        "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "Wayfair",
+        "role": "Senior Frontend Engineer",
+        "question": "* JavaScript question, which was similar to implementing an Observer Pattern/EventEmitter Overall, the assessment was Easy to Medium in difficulty and was fairly straightforward.",
+        "source_title": "Wayfair Frontend Interview Experience | SDE-2",
+        "source_url": "https://medium.com/frontend-army/wayfair-frontend-interview-experience-sde-2-37acf597f8e2"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "LinkedIn",
+        "role": "Senior Frontend Engineer",
+        "question": "Unlike interviews that focus heavily on Data Structures & Algorithms, LinkedIn evaluates how well you can build scalable user interfaces, reason about browser behavior, write clean JavaScript, and make sound engineering decisions.",
+        "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+        "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "LinkedIn",
+        "role": "Senior Frontend Engineer",
+        "question": "#### Question 2: Implement Memoization Implement a reusable memoization utility.",
+        "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+        "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "LinkedIn",
+        "role": "Senior Frontend Engineer",
+        "question": "Implement a reusable memoization utility.",
+        "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+        "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "LinkedIn",
+        "role": "Senior Frontend Engineer",
+        "question": "Initially implement using only: Later extend it using JavaScript.",
+        "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+        "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "JioHotstar",
+        "role": "Senior Frontend Engineer",
+        "question": "#### Coding Questions I was asked two JavaScript coding questions that tested problem-solving skills along with a solid understanding of core JavaScript concepts.",
+        "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+        "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "JioHotstar",
+        "role": "Senior Frontend Engineer",
+        "question": "I was asked two JavaScript coding questions that tested problem-solving skills along with a solid understanding of core JavaScript concepts. The discussion was interactive, and the interviewer appreciated my understanding of JavaScript fundamentals.",
+        "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+        "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "PayPal",
+        "role": "Senior Frontend Engineer",
+        "question": "Implement a utility function similar to groupBy(). Example:",
+        "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+        "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "Oracle",
+        "role": "Senior Frontend Engineer",
+        "question": "#### Question 1: Implement a Custom map() Implement your own version of Array.prototype.map().",
+        "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+        "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "Oracle",
+        "role": "Senior Frontend Engineer",
+        "question": "Implement your own version of Array.prototype.map().",
+        "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+        "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "Tessell",
+        "role": "Senior Frontend Engineer",
+        "question": "### Round 3: Data Structures & Algorithms The next round evaluated problem-solving skills using JavaScript.",
+        "source_title": "Tessell Frontend Interview Experience | 52 LPA | Senior Frontend Engineer",
+        "source_url": "https://medium.com/frontend-army/tessell-frontend-interview-experience-52-lpa-senior-frontend-engineer-40bd61dd4259"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Frontend Engineer",
+        "question": "Additionally, the implementation lacks handling for race conditions (stale responses overwriting newer ones), loading and error UI, proper memoization of callbacks, and uses an unrealistically low debounce delay. These issues affect correctness and user experience, so I'd request changes before approving the pull request.",
+        "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+        "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "#### Question 2: Implement promiseAllSync The interviewer provided a function that returned promises with different completion times and asked me to implement a custom function similar to Promise.all.",
+        "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "The interviewer provided a function that returned promises with different completion times and asked me to implement a custom function similar to Promise.all.",
+        "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "Implement: ```javascript",
+        "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "* – JavaScript Coding Questions * – JavaScript Fundamentals Recently, I interviewed for the SDE 2 Frontend role at JioHotstar. I wanted to share the complete experience because the process was quite long, involved multiple reschedules, and ultimately ended in rejection for reasons that did not seem related to technical performance.",
+        "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+        "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "#### JavaScript Coding Questions I was asked two JavaScript coding questions.",
+        "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+        "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "I was asked two JavaScript coding questions. The interview also included discussions around:",
+        "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+        "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "MakeMyTrip",
+        "role": "Senior Frontend Engineer",
+        "question": "Problem Statement ```javascript",
+        "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "MakeMyTrip",
+        "role": "Senior Frontend Engineer",
+        "question": "#### Question 2: Implement promiseAllSync without async/await This was one of the most interesting questions.",
+        "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "* – Question 1: Implement Array.prototype.flat() * – Prototype & Prototype Chaining Discussion * – Prototype Relationships",
+        "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+        "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "#### Question 1: Implement Array.prototype.flat() The interviewer asked me to create my own implementation of:",
+        "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+        "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "I was also asked two JavaScript coding questions. The discussion was interactive and focused more on understanding my problem-solving approach rather than simply reaching the final answer.",
+        "source_title": "Cult.fit Frontend Interview Experience | SDE-2",
+        "source_url": "https://medium.com/frontend-army/cult-fit-frontend-interview-experience-sde-2-d1d8834aae3c"
+      },
+      {
+        "category": "JavaScript (Core)",
+        "company": "General",
+        "role": "Frontend Engineer",
+        "question": "* The backend is provided and already implements the described API. The server will be running on the command: ```javascript docker run -p 8860:8860 tripleaio/transfer-api-server",
+        "source_title": "Triple A Frontend Recruitment Exercise",
+        "source_url": "https://medium.com/frontend-army/triple-a-frontend-recruitment-exercise-442abd66ca4f"
+      }
+    ],
+    "CSS & HTML": [
+      {
+        "category": "CSS & HTML",
+        "company": "MakeMyTrip",
+        "role": "Senior Frontend Engineer",
+        "question": "Implement a Reddit-style comment section. Requirements:",
+        "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+      },
+      {
+        "category": "CSS & HTML",
+        "company": "Amazon",
+        "role": "Frontend Engineer",
+        "question": "* UI implementation * Code quality The exact problem statement varied, but the goal was to build a clean, responsive, and maintainable frontend solution.",
+        "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+        "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+      },
+      {
+        "category": "CSS & HTML",
+        "company": "Amazon",
+        "role": "Frontend Engineer",
+        "question": "The exact problem statement varied, but the goal was to build a clean, responsive, and maintainable frontend solution. After completing the assignment, I was invited for the technical interview rounds.",
+        "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+        "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+      },
+      {
+        "category": "CSS & HTML",
+        "company": "General",
+        "role": "Frontend Engineer",
+        "question": "A Search Bar with a Debounce feature has been implemented in the Travel App frontend to enhance the user experience when searching for apartments. This feature reduces unnecessary API calls by delaying them until the user pauses typing, ensuring better performance and responsiveness.",
+        "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+        "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+      }
+    ],
+    "Algorithms & Data Structures": [
+      {
+        "category": "Algorithms & Data Structures",
+        "company": "PayPal",
+        "role": "Senior Frontend Engineer",
+        "question": "Implement an LRU Cache supporting: * get()",
+        "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+        "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+      },
+      {
+        "category": "Algorithms & Data Structures",
+        "company": "Oracle",
+        "role": "Senior Frontend Engineer",
+        "question": "#### Problem Statement Given two strings, find the length of the longest substring present in both strings.",
+        "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+        "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+      },
+      {
+        "category": "Algorithms & Data Structures",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "The implementation required recursive traversal of nested arrays.",
+        "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+        "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+      }
+    ],
+    "System Design & Architecture": [
+      {
+        "category": "System Design & Architecture",
+        "company": "Okta",
+        "role": "Frontend Engineer II (SDE-2)",
+        "question": "#### Problem Statement Design a content publishing platform where:",
+        "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+        "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+      },
+      {
+        "category": "System Design & Architecture",
+        "company": "Okta",
+        "role": "Frontend Engineer II (SDE-2)",
+        "question": "#### Problem Statement Design a content publishing platform where:",
+        "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+        "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+      }
+    ],
+    "General / Other": [
+      {
+        "category": "General / Other",
+        "company": "BrowserStack",
+        "role": "Frontend Engineer",
+        "question": "The primary objective was to match the design as closely as possible.",
+        "source_title": "BrowserStack Frontend Developer Interview Experience",
+        "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+      },
+      {
+        "category": "General / Other",
+        "company": "Okta",
+        "role": "Frontend Engineer II (SDE-2)",
+        "question": "* 3 Problem Statement * 4 Requirements * 5 My Approach",
+        "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+        "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+      },
+      {
+        "category": "General / Other",
+        "company": "Okta",
+        "role": "Frontend Engineer II (SDE-2)",
+        "question": "### Problem Statement Input: An integer n",
+        "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+        "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+      },
+      {
+        "category": "General / Other",
+        "company": "Okta",
+        "role": "Frontend Engineer II (SDE-2)",
+        "question": "The interviewer was more interested in why I chose a particular implementation than simply getting the correct output.",
+        "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+        "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+      },
+      {
+        "category": "General / Other",
+        "company": "Wayfair",
+        "role": "Senior Frontend Engineer",
+        "question": "The task was to implement filtering functionality based on the selected option so that the reviews would update dynamically.",
+        "source_title": "Wayfair Frontend Interview Experience | SDE-2",
+        "source_url": "https://medium.com/frontend-army/wayfair-frontend-interview-experience-sde-2-37acf597f8e2"
+      },
+      {
+        "category": "General / Other",
+        "company": "JioHotstar",
+        "role": "Senior Frontend Engineer",
+        "question": "* – Coding Questions * 4 Round 2: Machine Coding * – Machine Coding Task",
+        "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+        "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+      },
+      {
+        "category": "General / Other",
+        "company": "PayPal",
+        "role": "Senior Frontend Engineer",
+        "question": "Implement a Task Scheduler class supporting: * Add task",
+        "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+        "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+      },
+      {
+        "category": "General / Other",
+        "company": "PayPal",
+        "role": "Senior Frontend Engineer",
+        "question": "The focus was on clean class design rather than complex algorithms.",
+        "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+        "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+      },
+      {
+        "category": "General / Other",
+        "company": "PayPal",
+        "role": "Senior Frontend Engineer",
+        "question": "### Round 2: Data Structures & Algorithms This round focused entirely on problem-solving.",
+        "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+        "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+      },
+      {
+        "category": "General / Other",
+        "company": "Tessell",
+        "role": "Senior Frontend Engineer",
+        "question": "* Trade-offs considered while implementing features The discussion focused heavily on practical engineering experience rather than textbook knowledge.",
+        "source_title": "Tessell Frontend Interview Experience | 52 LPA | Senior Frontend Engineer",
+        "source_url": "https://medium.com/frontend-army/tessell-frontend-interview-experience-52-lpa-senior-frontend-engineer-40bd61dd4259"
+      },
+      {
+        "category": "General / Other",
+        "company": "Amazon",
+        "role": "Frontend Engineer",
+        "question": "I recently came across an interview experience for the Frontend Engineer I role at Amazon India. The interview process combined algorithmic… ![](/img/medium/700/1*KIURdaf2LtlJ_a6-tmqfYg.png)",
+        "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+        "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+      },
+      {
+        "category": "General / Other",
+        "company": "Amazon",
+        "role": "Frontend Engineer",
+        "question": "I recently came across an interview experience for the Frontend Engineer I role at Amazon India. The interview process combined algorithmic problem-solving with frontend development, assessing both coding fundamentals and UI implementation skills.",
+        "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+        "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+      },
+      {
+        "category": "General / Other",
+        "company": "Amazon",
+        "role": "Frontend Engineer",
+        "question": "* Data Structures & Algorithms * Object-Oriented Programming * Computer Networks",
+        "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+        "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Frontend Engineer",
+        "question": "// TODO: implement // Should return: activeTab, setActiveTab, registerTab, tabs }",
+        "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+        "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "The interviewer asked me to implement the solution: * Using recursion",
+        "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "* Frontend challenges faced during implementation This discussion felt more practical than theoretical, which I appreciated.",
+        "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+        "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "This round was more frontend engineering-focused and involved practical UI implementation.",
+        "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+        "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+      },
+      {
+        "category": "General / Other",
+        "company": "MakeMyTrip",
+        "role": "Senior Frontend Engineer",
+        "question": "The interviewer asked to implement: * With recursion",
+        "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+      },
+      {
+        "category": "General / Other",
+        "company": "MakeMyTrip",
+        "role": "Senior Frontend Engineer",
+        "question": "This is a very common frontend machine coding question. Expected concepts:",
+        "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+        "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "The interviewer asked me to create my own implementation of: Example:",
+        "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+        "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "Implement all missing functionality, including: * Add Product",
+        "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+        "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+      },
+      {
+        "category": "General / Other",
+        "company": "Okta",
+        "role": "Frontend Engineer II (SDE-2)",
+        "question": "* Scalable implementation One important lesson from this round was that interviewers often care more about design decisions and trade-offs than simply producing a working solution.",
+        "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+        "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+      },
+      {
+        "category": "General / Other",
+        "company": "Okta",
+        "role": "Frontend Engineer II (SDE-2)",
+        "question": "* Readability vs implementation",
+        "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+        "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Frontend Engineer",
+        "question": "* Implement basic validation for user input. * Handle backend API integration gracefully, including proper error handling",
+        "source_title": "Triple A Frontend Recruitment Exercise",
+        "source_url": "https://medium.com/frontend-army/triple-a-frontend-recruitment-exercise-442abd66ca4f"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "#### 2. Implement func(1)(2)(3)…() This was an extension of currying.",
+        "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+        "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "* Diffing algorithm * Reconciliation This is a very common senior frontend topic.",
+        "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+        "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "This round was more implementation-heavy.",
+        "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+        "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+      },
+      {
+        "category": "General / Other",
+        "company": "General",
+        "role": "Senior Frontend Engineer",
+        "question": "This was one of the most important machine coding questions. Requirements:",
+        "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+        "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+      }
+    ]
+  },
+  "all_questions": [
+    {
+      "category": "React",
+      "company": "BrowserStack",
+      "role": "Frontend Engineer",
+      "question": "I recently came across an interview experience for the Frontend Developer role at BrowserStack. The interview process was heavily focused on frontend fundamentals, React, Next.js, CSS, UI implementation, and frontend system design.",
+      "source_title": "BrowserStack Frontend Developer Interview Experience",
+      "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+    },
+    {
+      "category": "General / Other",
+      "company": "BrowserStack",
+      "role": "Frontend Engineer",
+      "question": "The primary objective was to match the design as closely as possible.",
+      "source_title": "BrowserStack Frontend Developer Interview Experience",
+      "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+    },
+    {
+      "category": "React",
+      "company": "BrowserStack",
+      "role": "Frontend Engineer",
+      "question": "#### Design an Autocomplete Component The interviewer asked me to explain how I would build an autocomplete search component.",
+      "source_title": "BrowserStack Frontend Developer Interview Experience",
+      "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+    },
+    {
+      "category": "React",
+      "company": "BrowserStack",
+      "role": "Frontend Engineer",
+      "question": "This question evaluated not just implementation skills but also knowledge of frontend design systems and reusable component architecture.",
+      "source_title": "BrowserStack Frontend Developer Interview Experience",
+      "source_url": "https://medium.com/frontend-army/browserstack-frontend-developer-interview-experience-209020a79123"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "MakeMyTrip",
+      "role": "Senior Frontend Engineer",
+      "question": "* – Question 2: Implement Retry Promise Recently, I came across another frontend interview experience for the Senior Software Engineer-2 (Frontend) role at MakeMyTrip. Although I had previously shared an interview experience from MMT, this process contained a different set of discussions and highlighted the kind of practical frontend problems senior engineers are expected to solve.",
+      "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "MakeMyTrip",
+      "role": "Senior Frontend Engineer",
+      "question": "#### Question 2: Implement Retry Promise Implement a function:",
+      "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "MakeMyTrip",
+      "role": "Senior Frontend Engineer",
+      "question": "Implement a function: ```javascript",
+      "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+    },
+    {
+      "category": "CSS & HTML",
+      "company": "MakeMyTrip",
+      "role": "Senior Frontend Engineer",
+      "question": "Implement a Reddit-style comment section. Requirements:",
+      "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "MakeMyTrip",
+      "role": "Senior Frontend Engineer",
+      "question": "Implement: ```javascript",
+      "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-58c06c7a3e26"
+    },
+    {
+      "category": "General / Other",
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "question": "* 3 Problem Statement * 4 Requirements * 5 My Approach",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+      "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+    },
+    {
+      "category": "React",
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "question": "The interviewer provided a React boilerplate and asked me to implement the following.",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+      "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+    },
+    {
+      "category": "General / Other",
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "question": "### Problem Statement Input: An integer n",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+      "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+    },
+    {
+      "category": "General / Other",
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "question": "The interviewer was more interested in why I chose a particular implementation than simply getting the correct output.",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+      "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+    },
+    {
+      "category": "System Design & Architecture",
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "question": "#### Problem Statement Design a content publishing platform where:",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA",
+      "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-45-lpa-7163980a4e0a"
+    },
+    {
+      "category": "React",
+      "company": "Wayfair",
+      "role": "Senior Frontend Engineer",
+      "question": "Shortly after applying, I received a code assessment consisting of two coding questions: * React question (don't remember the exact problem)",
+      "source_title": "Wayfair Frontend Interview Experience | SDE-2",
+      "source_url": "https://medium.com/frontend-army/wayfair-frontend-interview-experience-sde-2-37acf597f8e2"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "Wayfair",
+      "role": "Senior Frontend Engineer",
+      "question": "* JavaScript question, which was similar to implementing an Observer Pattern/EventEmitter Overall, the assessment was Easy to Medium in difficulty and was fairly straightforward.",
+      "source_title": "Wayfair Frontend Interview Experience | SDE-2",
+      "source_url": "https://medium.com/frontend-army/wayfair-frontend-interview-experience-sde-2-37acf597f8e2"
+    },
+    {
+      "category": "General / Other",
+      "company": "Wayfair",
+      "role": "Senior Frontend Engineer",
+      "question": "The task was to implement filtering functionality based on the selected option so that the reviews would update dynamically.",
+      "source_title": "Wayfair Frontend Interview Experience | SDE-2",
+      "source_url": "https://medium.com/frontend-army/wayfair-frontend-interview-experience-sde-2-37acf597f8e2"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "LinkedIn",
+      "role": "Senior Frontend Engineer",
+      "question": "Unlike interviews that focus heavily on Data Structures & Algorithms, LinkedIn evaluates how well you can build scalable user interfaces, reason about browser behavior, write clean JavaScript, and make sound engineering decisions.",
+      "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+      "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "LinkedIn",
+      "role": "Senior Frontend Engineer",
+      "question": "#### Question 2: Implement Memoization Implement a reusable memoization utility.",
+      "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+      "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "LinkedIn",
+      "role": "Senior Frontend Engineer",
+      "question": "Implement a reusable memoization utility.",
+      "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+      "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+    },
+    {
+      "category": "React",
+      "company": "LinkedIn",
+      "role": "Senior Frontend Engineer",
+      "question": "#### Question: Build a Tooltip Component Initially implement using only:",
+      "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+      "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "LinkedIn",
+      "role": "Senior Frontend Engineer",
+      "question": "Initially implement using only: Later extend it using JavaScript.",
+      "source_title": "LinkedIn Senior Frontend Engineer Interview Experience | 2026",
+      "source_url": "https://medium.com/frontend-army/linkedin-senior-frontend-engineer-interview-experience-2026-9aa0658df97b"
+    },
+    {
+      "category": "General / Other",
+      "company": "JioHotstar",
+      "role": "Senior Frontend Engineer",
+      "question": "* – Coding Questions * 4 Round 2: Machine Coding * – Machine Coding Task",
+      "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+      "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "JioHotstar",
+      "role": "Senior Frontend Engineer",
+      "question": "#### Coding Questions I was asked two JavaScript coding questions that tested problem-solving skills along with a solid understanding of core JavaScript concepts.",
+      "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+      "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "JioHotstar",
+      "role": "Senior Frontend Engineer",
+      "question": "I was asked two JavaScript coding questions that tested problem-solving skills along with a solid understanding of core JavaScript concepts. The discussion was interactive, and the interviewer appreciated my understanding of JavaScript fundamentals.",
+      "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+      "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+    },
+    {
+      "category": "React",
+      "company": "JioHotstar",
+      "role": "Senior Frontend Engineer",
+      "question": "The interviewer wasn't only interested in whether the component worked correctly but also in the design decisions behind the implementation.",
+      "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2",
+      "source_url": "https://medium.com/frontend-army/jiohotstar-frontend-interview-experience-48-lpa-sde-2-865d1e62892d"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "PayPal",
+      "role": "Senior Frontend Engineer",
+      "question": "Implement a utility function similar to groupBy(). Example:",
+      "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+      "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+    },
+    {
+      "category": "General / Other",
+      "company": "PayPal",
+      "role": "Senior Frontend Engineer",
+      "question": "Implement a Task Scheduler class supporting: * Add task",
+      "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+      "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+    },
+    {
+      "category": "General / Other",
+      "company": "PayPal",
+      "role": "Senior Frontend Engineer",
+      "question": "The focus was on clean class design rather than complex algorithms.",
+      "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+      "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+    },
+    {
+      "category": "General / Other",
+      "company": "PayPal",
+      "role": "Senior Frontend Engineer",
+      "question": "### Round 2: Data Structures & Algorithms This round focused entirely on problem-solving.",
+      "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+      "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+    },
+    {
+      "category": "Algorithms & Data Structures",
+      "company": "PayPal",
+      "role": "Senior Frontend Engineer",
+      "question": "Implement an LRU Cache supporting: * get()",
+      "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE",
+      "source_url": "https://medium.com/frontend-army/paypal-frontend-interview-experience-52-lpa-sse-ab08855e8cbf"
+    },
+    {
+      "category": "React",
+      "company": "Oracle",
+      "role": "Senior Frontend Engineer",
+      "question": "* – Problem Statement I recently came across an interview experience for a Senior Frontend Engineer role at Oracle. The interview process was concise but highly focused on JavaScript fundamentals, React concepts, design patterns, and practical coding skills.",
+      "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+      "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+    },
+    {
+      "category": "React",
+      "company": "Oracle",
+      "role": "Senior Frontend Engineer",
+      "question": "* Data Structures & Algorithms * JavaScript Fundamentals * React",
+      "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+      "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+    },
+    {
+      "category": "Algorithms & Data Structures",
+      "company": "Oracle",
+      "role": "Senior Frontend Engineer",
+      "question": "#### Problem Statement Given two strings, find the length of the longest substring present in both strings.",
+      "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+      "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "Oracle",
+      "role": "Senior Frontend Engineer",
+      "question": "#### Question 1: Implement a Custom map() Implement your own version of Array.prototype.map().",
+      "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+      "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "Oracle",
+      "role": "Senior Frontend Engineer",
+      "question": "Implement your own version of Array.prototype.map().",
+      "source_title": "Oracle Frontend Interview Experience | Senior Frontend Engineer",
+      "source_url": "https://medium.com/frontend-army/oracle-frontend-interview-experience-senior-frontend-engineer-da1a4b64a0cc"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "Tessell",
+      "role": "Senior Frontend Engineer",
+      "question": "### Round 3: Data Structures & Algorithms The next round evaluated problem-solving skills using JavaScript.",
+      "source_title": "Tessell Frontend Interview Experience | 52 LPA | Senior Frontend Engineer",
+      "source_url": "https://medium.com/frontend-army/tessell-frontend-interview-experience-52-lpa-senior-frontend-engineer-40bd61dd4259"
+    },
+    {
+      "category": "General / Other",
+      "company": "Tessell",
+      "role": "Senior Frontend Engineer",
+      "question": "* Trade-offs considered while implementing features The discussion focused heavily on practical engineering experience rather than textbook knowledge.",
+      "source_title": "Tessell Frontend Interview Experience | 52 LPA | Senior Frontend Engineer",
+      "source_url": "https://medium.com/frontend-army/tessell-frontend-interview-experience-52-lpa-senior-frontend-engineer-40bd61dd4259"
+    },
+    {
+      "category": "General / Other",
+      "company": "Amazon",
+      "role": "Frontend Engineer",
+      "question": "I recently came across an interview experience for the Frontend Engineer I role at Amazon India. The interview process combined algorithmic… ![](/img/medium/700/1*KIURdaf2LtlJ_a6-tmqfYg.png)",
+      "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+      "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+    },
+    {
+      "category": "General / Other",
+      "company": "Amazon",
+      "role": "Frontend Engineer",
+      "question": "I recently came across an interview experience for the Frontend Engineer I role at Amazon India. The interview process combined algorithmic problem-solving with frontend development, assessing both coding fundamentals and UI implementation skills.",
+      "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+      "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+    },
+    {
+      "category": "General / Other",
+      "company": "Amazon",
+      "role": "Frontend Engineer",
+      "question": "* Data Structures & Algorithms * Object-Oriented Programming * Computer Networks",
+      "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+      "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+    },
+    {
+      "category": "CSS & HTML",
+      "company": "Amazon",
+      "role": "Frontend Engineer",
+      "question": "* UI implementation * Code quality The exact problem statement varied, but the goal was to build a clean, responsive, and maintainable frontend solution.",
+      "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+      "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+    },
+    {
+      "category": "CSS & HTML",
+      "company": "Amazon",
+      "role": "Frontend Engineer",
+      "question": "The exact problem statement varied, but the goal was to build a clean, responsive, and maintainable frontend solution. After completing the assignment, I was invited for the technical interview rounds.",
+      "source_title": "Amazon Frontend Engineer Interview Experience | 2026",
+      "source_url": "https://medium.com/frontend-army/amazon-frontend-engineer-interview-experience-2026-a81e237279aa"
+    },
+    {
+      "category": "CSS & HTML",
+      "company": "General",
+      "role": "Frontend Engineer",
+      "question": "A Search Bar with a Debounce feature has been implemented in the Travel App frontend to enhance the user experience when searching for apartments. This feature reduces unnecessary API calls by delaying them until the user pauses typing, ensuring better performance and responsiveness.",
+      "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+      "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+    },
+    {
+      "category": "React",
+      "company": "General",
+      "role": "Frontend Engineer",
+      "question": "The implementation is moving in the right direction, but the debounce hook is functionally incorrect because it updates the debounced value immediately.",
+      "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+      "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Frontend Engineer",
+      "question": "Additionally, the implementation lacks handling for race conditions (stale responses overwriting newer ones), loading and error UI, proper memoization of callbacks, and uses an unrealistically low debounce delay. These issues affect correctness and user experience, so I'd request changes before approving the pull request.",
+      "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+      "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+    },
+    {
+      "category": "React",
+      "company": "General",
+      "role": "Frontend Engineer",
+      "question": "\"We're building a reusable Tabs component for Moniepoint's design system. It will be used across multiple product surfaces — dashboards, settings pages, onboarding flows. I'd like you to implement it as a compound component in React and TypeScript, using a custom hook internally to manage state.",
+      "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+      "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Frontend Engineer",
+      "question": "// TODO: implement // Should return: activeTab, setActiveTab, registerTab, tabs }",
+      "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote",
+      "source_url": "https://medium.com/frontend-army/moniepoint-frontend-interview-experience-55-lpa-remote-0e7687e26714"
+    },
+    {
+      "category": "React",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "* – Question 2: Implement promiseAllSync * – Question 3: React Search Component * 5 Hey New Readers 👋",
+      "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "The interviewer asked me to implement the solution: * Using recursion",
+      "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "#### Question 2: Implement promiseAllSync The interviewer provided a function that returned promises with different completion times and asked me to implement a custom function similar to Promise.all.",
+      "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "The interviewer provided a function that returned promises with different completion times and asked me to implement a custom function similar to Promise.all.",
+      "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "Implement: ```javascript",
+      "source_title": "Goibibo Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/goibibo-frontend-interview-experience-sse-2-a8573358bff4"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "* – JavaScript Coding Questions * – JavaScript Fundamentals Recently, I interviewed for the SDE 2 Frontend role at JioHotstar. I wanted to share the complete experience because the process was quite long, involved multiple reschedules, and ultimately ended in rejection for reasons that did not seem related to technical performance.",
+      "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+      "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "* Frontend challenges faced during implementation This discussion felt more practical than theoretical, which I appreciated.",
+      "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+      "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "#### JavaScript Coding Questions I was asked two JavaScript coding questions.",
+      "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+      "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "I was asked two JavaScript coding questions. The interview also included discussions around:",
+      "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+      "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "This round was more frontend engineering-focused and involved practical UI implementation.",
+      "source_title": "Jio Hotstar Frontend Interview Experience | SDE 2",
+      "source_url": "https://medium.com/frontend-army/jio-hotstar-frontend-interview-experience-sde-2-5bf2e29d95b2"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "MakeMyTrip",
+      "role": "Senior Frontend Engineer",
+      "question": "Problem Statement ```javascript",
+      "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+    },
+    {
+      "category": "General / Other",
+      "company": "MakeMyTrip",
+      "role": "Senior Frontend Engineer",
+      "question": "The interviewer asked to implement: * With recursion",
+      "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "MakeMyTrip",
+      "role": "Senior Frontend Engineer",
+      "question": "#### Question 2: Implement promiseAllSync without async/await This was one of the most interesting questions.",
+      "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+    },
+    {
+      "category": "General / Other",
+      "company": "MakeMyTrip",
+      "role": "Senior Frontend Engineer",
+      "question": "This is a very common frontend machine coding question. Expected concepts:",
+      "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+    },
+    {
+      "category": "React",
+      "company": "MakeMyTrip",
+      "role": "Senior Frontend Engineer",
+      "question": "Problem Statement: Build a React feature where: * Clicking Add creates a new progress bar",
+      "source_title": "MakeMyTrip (MMT) Frontend Interview Experience | SSE-2",
+      "source_url": "https://medium.com/frontend-army/makemytrip-mmt-frontend-interview-experience-sse-2-676ab922c819"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "* – Question 1: Implement Array.prototype.flat() * – Prototype & Prototype Chaining Discussion * – Prototype Relationships",
+      "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+      "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "#### Question 1: Implement Array.prototype.flat() The interviewer asked me to create my own implementation of:",
+      "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+      "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "The interviewer asked me to create my own implementation of: Example:",
+      "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+      "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+    },
+    {
+      "category": "Algorithms & Data Structures",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "The implementation required recursive traversal of nested arrays.",
+      "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+      "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "Implement all missing functionality, including: * Add Product",
+      "source_title": "My CoinDCX Frontend Interview Experience | SSE-1",
+      "source_url": "https://medium.com/frontend-army/my-coindcx-frontend-interview-experience-sse-1-0398b423af0c"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "I was also asked two JavaScript coding questions. The discussion was interactive and focused more on understanding my problem-solving approach rather than simply reaching the final answer.",
+      "source_title": "Cult.fit Frontend Interview Experience | SDE-2",
+      "source_url": "https://medium.com/frontend-army/cult-fit-frontend-interview-experience-sde-2-d1d8834aae3c"
+    },
+    {
+      "category": "React",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "The implementation itself was only one part of the discussion. The interviewer spent significant time evaluating: * Component design decisions",
+      "source_title": "Cult.fit Frontend Interview Experience | SDE-2",
+      "source_url": "https://medium.com/frontend-army/cult-fit-frontend-interview-experience-sde-2-d1d8834aae3c"
+    },
+    {
+      "category": "React",
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "question": "* – Problem Statement * ReactJS fundamentals and component design * Core JavaScript concepts and browser internals",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+      "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+    },
+    {
+      "category": "React",
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "question": "#### Problem Statement The application should accept a number n from an input box and render an n × n grid.",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+      "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+    },
+    {
+      "category": "General / Other",
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "question": "* Scalable implementation One important lesson from this round was that interviewers often care more about design decisions and trade-offs than simply producing a working solution.",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+      "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+    },
+    {
+      "category": "General / Other",
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "question": "* Readability vs implementation",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+      "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+    },
+    {
+      "category": "System Design & Architecture",
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "question": "#### Problem Statement Design a content publishing platform where:",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | SDE-2",
+      "source_url": "https://medium.com/frontend-army/okta-sde-2-frontend-interview-experience-sde-2-990014c22919"
+    },
+    {
+      "category": "JavaScript (Core)",
+      "company": "General",
+      "role": "Frontend Engineer",
+      "question": "* The backend is provided and already implements the described API. The server will be running on the command: ```javascript docker run -p 8860:8860 tripleaio/transfer-api-server",
+      "source_title": "Triple A Frontend Recruitment Exercise",
+      "source_url": "https://medium.com/frontend-army/triple-a-frontend-recruitment-exercise-442abd66ca4f"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Frontend Engineer",
+      "question": "* Implement basic validation for user input. * Handle backend API integration gracefully, including proper error handling",
+      "source_title": "Triple A Frontend Recruitment Exercise",
+      "source_url": "https://medium.com/frontend-army/triple-a-frontend-recruitment-exercise-442abd66ca4f"
+    },
+    {
+      "category": "React",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "This round focused on JavaScript fundamentals along with practical React implementation.",
+      "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+      "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "#### 2. Implement func(1)(2)(3)…() This was an extension of currying.",
+      "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+      "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "* Diffing algorithm * Reconciliation This is a very common senior frontend topic.",
+      "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+      "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "This round was more implementation-heavy.",
+      "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+      "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+    },
+    {
+      "category": "General / Other",
+      "company": "General",
+      "role": "Senior Frontend Engineer",
+      "question": "This was one of the most important machine coding questions. Requirements:",
+      "source_title": "Paytm Money Frontend Interview Experience | SSE 2026",
+      "source_url": "https://medium.com/frontend-army/paytm-money-frontend-interview-experience-sse-2026-681c45f16c94"
+    }
+  ],
+  "salary_insights": [
+    {
+      "company": "Okta",
+      "role": "Frontend Engineer II (SDE-2)",
+      "salary": "45 LPA",
+      "source_title": "Okta SDE-2 Frontend Interview Experience | 45 LPA"
+    },
+    {
+      "company": "JioHotstar",
+      "role": "Senior Frontend Engineer",
+      "salary": "48 LPA",
+      "source_title": "JioHotstar Frontend Interview Experience | 48 LPA | SDE-2"
+    },
+    {
+      "company": "PayPal",
+      "role": "Senior Frontend Engineer",
+      "salary": "52 LPA",
+      "source_title": "PayPal Frontend Interview Experience | 52 LPA | SSE"
+    },
+    {
+      "company": "Tessell",
+      "role": "Senior Frontend Engineer",
+      "salary": "52 LPA",
+      "source_title": "Tessell Frontend Interview Experience | 52 LPA | Senior Frontend Engineer"
+    },
+    {
+      "company": "General",
+      "role": "Frontend Engineer",
+      "salary": "55 LPA",
+      "source_title": "MoniePoint Frontend Interview Experience | 55 LPA Remote"
+    },
+    {
+      "company": "Apple",
+      "role": "Senior Frontend Engineer",
+      "salary": "85 LPA",
+      "source_title": "My Apple Frontend Interview Experience | 85 LPA | Hyderabad"
+    },
+    {
+      "company": "Deel",
+      "role": "Remote Frontend Engineer",
+      "salary": "$80K (Remote)",
+      "source_title": "My Deel Frontend Interview Experience | $80K | Frontend Engineer (React.js)"
+    }
+  ],
+  "general_advice": []
+}

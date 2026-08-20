@@ -19,6 +19,4 @@ graphify-out/
 # Playwright artifacts
 .playwright-mcp/
 
-# Crawled output — full-text copies of third-party articles. Run the crawler
-# locally (see README) to populate this; not republished in the public repo.
-data/*.json
+
