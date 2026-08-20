@@ -154,6 +154,21 @@ try {
   await page.screenshot({ path: path.join(shotDir, 'article-modal.png') });
   await page.keyboard.press('Escape');
 
+  // ------------------------------------------------------- removed routes
+  const navItems = await page.locator('aside nav a').allTextContents();
+  check('navigation has exactly two entries', navItems.length === 2, JSON.stringify(navItems));
+
+  for (const gone of ['/synthesis', '/knowledge', '/settings']) {
+    await page.goto(`${baseUrl}${gone}`, { waitUntil: 'networkidle' });
+    check(`${gone} redirects to the posts grid`,
+      new URL(page.url()).pathname === '/', page.url());
+  }
+
+  // Category chips are only meaningful on the posts grid.
+  await page.goto(`${baseUrl}/docs/core-insights`, { waitUntil: 'networkidle' });
+  check('category filter hidden outside the posts grid',
+    (await page.getByText('Categories').count()) === 0);
+
   // ------------------------------------------------------------------ mobile
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${baseUrl}/docs/core-insights`, { waitUntil: 'networkidle' });

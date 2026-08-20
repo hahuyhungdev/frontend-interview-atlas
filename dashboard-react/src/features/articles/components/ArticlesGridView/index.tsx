@@ -14,8 +14,8 @@ export function ArticlesGridView({ filteredPosts, searchQuery, setSearchQuery, s
     <div>
       <div className="bg-gradient-to-br from-surface to-bg-secondary border border-border-main rounded-2xl p-6 md:p-8 mb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 relative overflow-hidden shadow-xs">
         <div>
-          <h2 className="text-xl font-bold text-text-primary mb-2">Frontend Army Knowledge Base</h2>
-          <p className="text-xs text-text-secondary max-w-xl leading-relaxed">Explore detailed interview rounds, core DSA questions, and salary breakdown summaries for Senior and Mid-level Frontend roles compiled from Gourav Hammad's publication posts.</p>
+          <h2 className="text-2xl font-bold text-text-primary mb-2">Crawled Interview Posts</h2>
+          <p className="text-sm text-text-secondary max-w-xl leading-relaxed">Interview rounds, coding questions, and salary breakdowns for senior and mid-level frontend roles, scraped from Gourav Hammad's Frontend Army publication.</p>
         </div>
         <div className="relative w-full md:w-80 shrink-0">
           <svg className="absolute left-3 top-3.5 w-4 h-4 text-text-muted" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"/></svg>
@@ -23,7 +23,7 @@ export function ArticlesGridView({ filteredPosts, searchQuery, setSearchQuery, s
             type="text" 
             value={searchQuery}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
-            className="w-full pl-9 pr-4 py-2.5 bg-bg-primary border border-border-main rounded-xl text-xs text-text-primary placeholder-text-muted focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500/20 transition-all" 
+            className="w-full pl-9 pr-4 py-2.5 bg-bg-primary border border-border-main rounded-xl text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500/20 transition-all" 
             placeholder="Search title or company..."
           />
         </div>
