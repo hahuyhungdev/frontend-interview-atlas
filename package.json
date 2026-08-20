@@ -1,0 +1,17 @@
+{
+  "name": "medium-posts-crawler",
+  "version": "1.0.0",
+  "description": "Medium posts crawler and knowledge synthesizer dashboard",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "npm run build --prefix dashboard-react",
+    "start": "node server.js",
+    "dev": "npm run dev --prefix dashboard-react",
+    "crawl": "./run_crawler.sh",
+    "test": "npm run build && node --test && .venv/bin/python3 -m unittest discover -s test -p 'test_*.py'"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

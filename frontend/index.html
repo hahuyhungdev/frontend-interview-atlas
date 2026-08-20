@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Army Crawler & Knowledge Synthesizer</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand-section" style="justify-content: space-between; width: 100%;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div class="brand-logo">FA</div>
+          <div class="brand-title-wrap">
+            <h1>Frontend Army</h1>
+            <p>Medium Post Crawler</p>
+          </div>
+        </div>
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <!-- Sun Icon (shown when light theme is active, click to switch to dark) -->
+          <svg id="theme-icon-light" viewBox="0 0 20 20" fill="currentColor" style="display: none;"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.46 5.05L5.75 4.35a1 1 0 10-1.41 1.41l.71.71zm10.607 10.607a1 1 0 01-1.414 0l-.707-.707a1 1 0 111.414-1.414l.707.707a1 1 0 010 1.414zM5 11a1 1 0 110-2h1a1 1 0 110 2H5z" clip-rule="evenodd" /></svg>
+          <!-- Moon Icon (shown when dark theme is active, click to switch to light) -->
+          <svg id="theme-icon-dark" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" /></svg>
+        </button>
+      </div>
+      
+      <!-- Stats Widget -->
+      <div class="stats-panel">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-value purple" id="stat-posts">0</span>
+            <span class="stat-label">Posts</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value emerald" id="stat-companies">0</span>
+            <span class="stat-label">Companies</span>
+          </div>
+          <div class="stat-item" style="grid-column: 1 / -1; margin-top: 8px; border-top: 1px solid var(--border); padding-top: 8px;">
+            <span class="stat-value amber" id="stat-salary">N/A</span>
+            <span class="stat-label">Max Stated Package</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Navigation -->
+      <nav class="nav-menu">
+        <div class="menu-section-title">Navigation</div>
+        <a class="nav-link active" onclick="switchView('tab-posts')">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/></svg>
+          All Crawled Posts
+        </a>
+        <a class="nav-link" onclick="switchView('tab-knowledge')">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.082l1.949.835a1 1 0 00.788 0l7-3a1 1 0 000-1.84l-7-3zM2.883 10.962a1 1 0 00-.378 1.342l3 5.5a1 1 0 001.73-.008l3-5.5a1 1 0 10-1.735-.988L6.852 14.3l-2.627-4.819a1 1 0 00-1.342-.378zM17.117 10.962a1 1 0 01.378 1.342l-3 5.5a1 1 0 01-1.73-.008l-3-5.5a1 1 0 111.735-.988l1.649 3.023 2.627-4.819a1 1 0 011.342-.378z"/></svg>
+          Synthesized Knowledge
+        </a>
+        <a class="nav-link" onclick="switchView('tab-settings')">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.533 1.533 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
+          Crawler Settings
+        </a>
+        
+        <div class="menu-section-title" style="margin-top: 24px;">Categories</div>
+        <div class="category-filter-list" id="category-filter-list">
+          <!-- Populated Dynamically -->
+        </div>
+      </nav>
+    </aside>
+    
+    <!-- Main Window -->
+    <main class="main-content">
+      
+      <!-- TAB 1: ARTICLES GRID -->
+      <section id="tab-posts" class="tab-content active">
+        <!-- Hero Search -->
+        <div class="hero-banner">
+          <div class="hero-text">
+            <h2>Frontend Army Knowledge Base</h2>
+            <p>Explore detailed interview rounds, core DSA questions, and salary breakdown summaries for Senior and Mid-level Frontend roles compiled from Gourav Hammad's publication posts.</p>
+          </div>
+          <div class="search-box-wrap">
+            <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/></svg>
+            <input type="text" id="search-input" class="search-input" placeholder="Search title or company...">
+          </div>
+        </div>
+        
+        <div class="section-header">
+          <h2 class="section-title">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20" style="color: var(--accent-purple);"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"/></svg>
+            All Discovered Articles
+          </h2>
+        </div>
+        
+        <!-- Articles grid -->
+        <div class="articles-grid" id="articles-grid">
+          <!-- Populated Dynamically -->
+        </div>
+      </section>
+      
+      <!-- TAB 2: SYNTHESIZED KNOWLEDGE -->
+      <section id="tab-knowledge" class="tab-content">
+        <div class="hero-banner" style="margin-bottom: 24px;">
+          <div class="hero-text" style="max-width: 100%;">
+            <h2>Knowledge Synthesis By Category</h2>
+            <p>Aggregated salary benchmarks, core coding problem statements, and key behavioral interview takeaways extracted dynamically from the crawlers' dataset.</p>
+          </div>
+        </div>
+        
+        <div class="synthesis-grid">
+          <div class="synthesis-nav">
+            <button class="synth-tab-btn active" onclick="switchSynthTab('panel-salaries')">💰 Salary Benchmarks</button>
+            <button class="synth-tab-btn" onclick="switchSynthTab('panel-react')">⚛️ React Hub</button>
+            <button class="synth-tab-btn" onclick="switchSynthTab('panel-javascript')">🟨 JavaScript Hub</button>
+            <button class="synth-tab-btn" onclick="switchSynthTab('panel-css')">🎨 CSS & HTML Hub</button>
+            <button class="synth-tab-btn" onclick="switchSynthTab('panel-algorithms')">📊 Algorithms Hub</button>
+          </div>
+          
+          <div class="synth-panel">
+            
+            <!-- Panel 1: Salaries -->
+            <div id="panel-salaries" class="synth-content active">
+              <h3 style="font-family: var(--font-header); font-size: 18px; margin-bottom: 8px;">Stated Salary Benchmarks</h3>
+              <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 16px;">Comparative view of salaries and total compensation packages stated in the interview experiences.</p>
+              
+              <table class="salary-table">
+                <thead>
+                  <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Compensation Package</th>
+                    <th>Source Article</th>
+                  </tr>
+                </thead>
+                <tbody id="salary-table-body">
+                  <!-- Populated Dynamically -->
+                </tbody>
+              </table>
+            </div>
+            
+            <!-- Panel 2: React Hub -->
+            <div id="panel-react" class="synth-content">
+              <h3 style="font-family: var(--font-header); font-size: 18px; margin-bottom: 8px;">React Knowledge Area Synthesis</h3>
+              
+              <div class="rendered-markdown" style="font-size: 13px; margin-bottom: 20px;">
+                <h4 style="margin-top: 10px;">Core Concepts Tested</h4>
+                <p>Interviews at major companies evaluate how well you structure components, manage state propagation, implement complex DOM interfaces, and deal with performance bottlenecks.</p>
+                <ul>
+                  <li><strong>Custom Hook Design</strong>: Creating clean APIs like tabs registration or viewport hooks to separate UI logic from components.</li>
+                  <li><strong>State & Context Propagation</strong>: Managing deep tree changes (e.g., nested comment trees) and utilizing <code>useContext</code> to avoid prop drilling.</li>
+                  <li><strong>Machine Coding Challenges</strong>: Rapidly building complete interfaces (like Autocomplete search inputs or Star Rating panels) from scratch.</li>
+                </ul>
+              </div>
+              
+              <h4 style="font-family: var(--font-header); font-size: 14px; margin-bottom: 12px; color: var(--accent-purple);">Curated React Coding Challenges</h4>
+              <div id="react-challenges">
+                <!-- Populated Dynamically -->
+              </div>
+            </div>
+            
+            <!-- Panel 3: JavaScript Hub -->
+            <div id="panel-javascript" class="synth-content">
+              <h3 style="font-family: var(--font-header); font-size: 18px; margin-bottom: 8px;">JavaScript Core Knowledge Area Synthesis</h3>
+              
+              <div class="rendered-markdown" style="font-size: 13px; margin-bottom: 20px;">
+                <h4 style="margin-top: 10px;">Core Concepts Tested</h4>
+                <p>Top-tier interviews heavily screen for asynchronous handling, scopes, closure caching, customized APIs, and custom implementations of standard JS patterns.</p>
+                <ul>
+                  <li><strong>Asynchronous Flows & Promises</strong>: Custom implementations of asynchronous retry handlers, flat/flatten wrappers, and task schedulers.</li>
+                  <li><strong>Closures & Memoization</strong>: Writing custom memoization functions and implementing cache logic (like LRU Cache).</li>
+                  <li><strong>OOP & Design Patterns</strong>: Designing custom classes like EventEmitters, Observer patterns, and complex task queue structures.</li>
+                </ul>
+              </div>
+              
+              <h4 style="font-family: var(--font-header); font-size: 14px; margin-bottom: 12px; color: var(--accent-purple);">Curated JavaScript Core Challenges</h4>
+              <div id="javascript-challenges">
+                <!-- Populated Dynamically -->
+              </div>
+            </div>
+            
+            <!-- Panel 4: CSS & HTML Hub -->
+            <div id="panel-css" class="synth-content">
+              <h3 style="font-family: var(--font-header); font-size: 18px; margin-bottom: 8px;">CSS & HTML Layout Area Synthesis</h3>
+              
+              <div class="rendered-markdown" style="font-size: 13px; margin-bottom: 20px;">
+                <h4 style="margin-top: 10px;">Core Concepts Tested</h4>
+                <p>Frontend developers must demonstrate pixel-perfect styling capabilities, fluid responsive grids, and clean layout optimization tricks.</p>
+                <ul>
+                  <li><strong>Flexbox vs Grid layouts</strong>: Constructing complex dashboards and comment tree nodes using CSS selectors.</li>
+                  <li><strong>Pure CSS Components</strong>: Building interactive assets like Tooltips utilizing selectors and positioning without loading JS scripts.</li>
+                  <li><strong>Visual Skeletal Feedback</strong>: Rendering layout skeleton placeholders and shimmers during background API queries.</li>
+                </ul>
+              </div>
+              
+              <h4 style="font-family: var(--font-header); font-size: 14px; margin-bottom: 12px; color: var(--accent-purple);">Curated CSS & HTML Challenges</h4>
+              <div id="css-challenges">
+                <!-- Populated Dynamically -->
+              </div>
+            </div>
+            
+            <!-- Panel 5: Algorithms Hub -->
+            <div id="panel-algorithms" class="synth-content">
+              <h3 style="font-family: var(--font-header); font-size: 18px; margin-bottom: 8px;">Algorithms & Data Structures Synthesis</h3>
+              
+              <div class="rendered-markdown" style="font-size: 13px; margin-bottom: 20px;">
+                <h4 style="margin-top: 10px;">Core Concepts Tested</h4>
+                <p>Firms like Amazon and Oracle strictly screen algorithms in first rounds, searching for optimal space/time complexity solutions.</p>
+                <ul>
+                  <li><strong>Tree Traversal</strong>: BST inorder traversals to sorted lists, linked list manipulations, and BST value checking.</li>
+                  <li><strong>Two-Pointer & Sliding Window</strong>: Optimizing searches (like 3Sum or longest common substrings) to skip redundant operations.</li>
+                  <li><strong>Sorted Matrix Iterations</strong>: Finding targets on sorted rows/columns in linear space/time.</li>
+                </ul>
+              </div>
+              
+              <h4 style="font-family: var(--font-header); font-size: 14px; margin-bottom: 12px; color: var(--accent-purple);">Curated Algorithmic Challenges</h4>
+              <div id="algorithms-challenges">
+                <!-- Populated Dynamically -->
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
+      <!-- TAB 3: CRAWLER CONTROL -->
+      <section id="tab-settings" class="tab-content">
+        <div class="hero-banner" style="margin-bottom: 24px;">
+          <div class="hero-text" style="max-width: 100%;">
+            <h2>Crawler Settings & Controls</h2>
+            <p>Control the scraping process dynamically. Sync RSS feeds to download newly published posts, or feed a specific Medium URL below to crawl and add it to the dashboard in real-time.</p>
+          </div>
+        </div>
+        
+        <div class="settings-box">
+          <h3 style="font-family: var(--font-header); font-size: 18px; margin-bottom: 12px;">Add Custom Medium Article</h3>
+          <form id="crawl-url-form" onsubmit="handleCrawlSubmit(event)">
+            <div class="form-group">
+              <label class="form-label" for="crawl-url-input">Medium URL</label>
+              <div class="form-input-wrap">
+                <input type="url" id="crawl-url-input" class="form-input" placeholder="https://medium.com/frontend-army/..." required>
+                <button type="submit" id="crawl-submit-btn" class="btn-primary">Run Crawler</button>
+              </div>
+              <p style="font-size: 11px; color: var(--text-muted); margin-top: 6px;">URL will automatically be mapped to <strong>Freedium Mirror</strong> to bypass paywalls and retrieve clean Markdown.</p>
+            </div>
+          </form>
+          
+          <div style="border-top: 1px solid var(--border); margin-top: 24px; padding-top: 24px;">
+            <h3 style="font-family: var(--font-header); font-size: 16px; margin-bottom: 8px;">Sync Database with RSS Feeds</h3>
+            <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 16px;">This will scan the RSS feeds of Gourav Hammad and Frontend Army to search for the 10 most recent posts, downloading and compiling any articles not yet present in the local database.</p>
+            <button id="full-sync-btn" class="btn-secondary" onclick="runFullSync()">Sync Feeds</button>
+          </div>
+        </div>
+        
+        <h3 style="font-family: var(--font-header); font-size: 16px; margin-bottom: 8px;">Crawler Console Logs Output</h3>
+        <div class="console-box" id="console-logger">
+          [SYSTEM] Dashboard loaded. Awaiting crawler events...
+        </div>
+      </section>
+      
+    </main>
+  </div>
+  
+  <!-- ARTICLE DETAIL MODAL OVERLAY -->
+  <div class="modal-overlay" id="modal-overlay" onclick="if(event.target === this) closeModal()">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h2 id="modal-title">Article Title</h2>
+          <div class="modal-meta">
+            <span id="modal-date">Date</span>
+            <span id="modal-role">Role</span>
+            <span id="modal-salary" style="color: var(--accent-emerald); font-weight: 600;">Salary</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <a id="modal-original-link" href="#" target="_blank" class="btn-secondary" style="padding: 6px 12px; font-size: 12px; display: inline-flex; align-items: center; gap: 4px;">
+            Original ↗
+          </a>
+          <a id="modal-freedium-link" href="#" target="_blank" class="btn-primary" style="padding: 6px 12px; font-size: 12px; display: inline-flex; align-items: center; gap: 4px;">
+            Freedium ↗
+          </a>
+          <button class="modal-close-btn" onclick="closeModal()">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="rendered-markdown" id="modal-rendered-body">
+          <!-- Markdown Rendered HTML here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

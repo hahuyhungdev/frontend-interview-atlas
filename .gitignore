@@ -1,0 +1,15 @@
+node_modules/
+dashboard-react/node_modules/
+dashboard-react/dist/
+.env
+.env.*
+!.env.example
+.frontend-scan-screens/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Generated artifacts
+graphify-out/
