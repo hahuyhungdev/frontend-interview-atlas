@@ -49,7 +49,7 @@ The crawler produces raw data; `docs/` is what that data was for. Read in this o
 | [`docs/frontend-react-insights.md`](./docs/frontend-react-insights.md) | Analysis of the corpus — what 23 interview loops across 19 companies actually reveal, including which rejection reasons repeat |
 | [`docs/frontend-knowledge-map.md`](./docs/frontend-knowledge-map.md) | Every concept to cover, in 21 categories across 6 layers, priority-marked by how much each decides outcomes |
 | [`docs/core-insights.md`](./docs/core-insights.md) | The eight mental models that generate the answers, plus what an interview corpus structurally cannot teach |
-| [`docs/answers/`](./docs/answers) | Model answers and reference implementations — 8 files covering JavaScript, React, machine coding, CSS/a11y/design, testing, security, modern data patterns, and production engineering |
+| [`docs/answers/`](./docs/answers) | Model answers and reference implementations — one topic per document (19 files): JavaScript, React (3), CSS, accessibility, machine coding (2), system design, testing, security, production engineering, DSA, behavioural, TypeScript, build tooling, web platform APIs, performance tooling, state machines |
 
 Files `01`–`04` of the answer bank come from the corpus. Files `05`–`08` fill the gaps the corpus never covered — testing, security, Server Components, and the production work nobody interviews on.
 

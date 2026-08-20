@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { NavLink, useParams, useNavigate, Navigate } from 'react-router';
+import { NavLink, useParams, useNavigate, useLocation, Navigate } from 'react-router';
 import { Markdown } from '../../../../shared/components/Markdown';
 import { useDocsIndex, useDoc } from '../../hooks/useDocs';
 
@@ -89,6 +89,7 @@ function TableOfContents({ markdown }: { markdown: string }) {
 export function DocsView() {
   const params = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const slug = params['*'] || '';
   const { groups, status: indexStatus } = useDocsIndex();
   const { doc, status } = useDoc(slug || undefined);
@@ -109,12 +110,19 @@ export function DocsView() {
     navigate(link.getAttribute('href') || '/docs');
   };
 
-  // A new document should start at the top, not at the previous scroll offset.
+  // A new document should start at the top, not at the previous scroll offset —
+  // unless the navigation is targeting a specific section (see the effect below).
   useEffect(() => {
+    if (location.hash) return;
     scrollerRef.current?.scrollTo({ top: 0 });
-  }, [slug]);
+  }, [slug, location.hash]);
 
-  // Assign ids to rendered headings so the table of contents can link to them.
+  // Assign ids to rendered headings so the table of contents — and cross-document
+  // links like `[...](./other-doc.md#some-heading)` — can jump to them. Client-side
+  // routing changes the URL's hash but, unlike a real page load, never scrolls the
+  // target into view on its own: react-router's navigate() only updates history, and
+  // there is no native browser scroll for a custom `.doc-scroller` container anyway.
+  // So once headings have ids, do that scroll ourselves.
   useEffect(() => {
     const root = scrollerRef.current;
     if (!root || !doc) return;
@@ -126,7 +134,12 @@ export function DocsView() {
       seen.set(base, count + 1);
       node.id = count === 0 ? base : `${base}-${count}`;
     });
-  }, [doc]);
+
+    if (location.hash) {
+      const target = document.getElementById(location.hash.slice(1));
+      target?.scrollIntoView({ block: 'start' });
+    }
+  }, [doc, location.hash]);
 
   if (indexStatus === 'success' && !slug && groups.length > 0) {
     const first = groups[0][1][0];

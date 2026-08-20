@@ -227,7 +227,9 @@ test('serves the repository study documents through the default docs directory',
     'frontend-knowledge-map',
     'core-insights',
     'answers/01-javascript',
-    'answers/08-production-engineering',
+    'answers/12-production',
+    'answers/15-typescript',
+    'answers/19-state-machines',
   ]) {
     assert.ok(slugs.includes(expected), `expected ${expected} in the document index`);
   }
@@ -243,7 +245,7 @@ test('serves the repository study documents through the default docs directory',
     'root documents come before grouped documents'
   );
 
-  const detail = await (await fetch(`http://127.0.0.1:${port}/api/docs/answers/06-security`)).json();
+  const detail = await (await fetch(`http://127.0.0.1:${port}/api/docs/answers/11-security`)).json();
   assert.equal(detail.success, true);
   assert.equal(detail.doc.group, 'answers');
   assert.match(detail.doc.markdown, /same-origin policy/i);

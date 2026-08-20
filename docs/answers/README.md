@@ -20,19 +20,24 @@ One document per topic, in reading order. Model answers for the concepts in [`..
 | 12 | [Production Engineering](./12-production.md) | Reading unfamiliar code, incremental migration, observability, incident response, safe rollout, i18n, money/time/text traps, network resilience, judgment, code review | Part 2 of core-insights |
 | 13 | [DSA for Frontend](./13-dsa.md) | Every algorithm problem the corpus asked, by company, with complexity reasoning and the five patterns they reduce to | §19 |
 | 14 | [Behavioural & Engineering Maturity](./14-behavioural.md) | STAR, resume defence, relocation and retention, disagreement, production debugging | §21 |
+| 15 | [TypeScript in Depth](./15-typescript.md) | Structural typing, generics done properly, mapped/conditional/template-literal types, `satisfies`, `as const`, typing real React code, strict-mode migration | §11 |
+| 16 | [Build Tooling & Module Systems](./16-build-tooling.md) | Why bundlers exist, CJS vs ESM, tree shaking mechanics, Webpack vs esbuild/SWC vs Vite, code splitting, module resolution, source maps, lockfiles, monorepos | §16 |
+| 17 | [Web Platform APIs](./17-web-platform.md) | Web Workers, Service Workers and the update problem, caching strategies, IndexedDB, Streams, Web Components/Shadow DOM, BroadcastChannel | §3 |
+| 18 | [Reading Performance Tools](./18-performance-tooling.md) | Reading a flame chart, self vs total time, heap snapshot diffing and the Retainers panel, RUM setup with `web-vitals`, network waterfalls, bundle treemaps, a worked diagnosis order | §9, §15 |
+| 19 | [State Machines & Complex UI State](./19-state-machines.md) | Boolean soup, states/events/transitions/guards, `useReducer` as an implicit machine, XState in practice, hierarchical and parallel states, when *not* to reach for one | §12 |
 
-**Why some topics span two files:** React and Machine Coding are large enough that one document would be unreadable. React splits by depth (core → advanced → data); Machine Coding splits by component set. Everything else is one topic, one file.
+**Why some topics span multiple files:** React and Machine Coding are large enough that one document would be unreadable. React splits by depth across three files (core → advanced → data); Machine Coding splits by component set across two. Everything else is one topic, one file.
 
 ## Where each topic's knowledge comes from
 
-The corpus is one author's 23 articles. It covers some topics heavily and others not at all, so roughly a third of this answer bank is knowledge added to complete the picture. This table says which is which.
+The corpus is one author's 23 articles. It covers some topics heavily and others not at all, so under half of this answer bank is knowledge added to complete the picture. This table says which is which.
 
 | Provenance | Topics |
 |---|---|
 | **Corpus questions, answers written here** | 01, 02, 07, 13 — they asked, the answers and code are added |
 | **Corpus named it, implementations added** | 08, 09 — components and designs were listed as prompts only |
-| **Barely in the corpus** | 05 (basic CSS only), 06 (graded but never explained), 14 |
-| **Not in the corpus at all** | 03, 04, 10, 11, 12 — added because the job needs them, *not* because this market was observed asking |
+| **Barely in the corpus** | 05 (basic CSS only), 06 (graded but never explained), 14, 17 (WebSockets/storage named, never explained) |
+| **Not in the corpus at all** | 03, 04, 10, 11, 12, 15, 16, 18, 19 — added because the job needs them, *not* because this market was observed asking |
 
 **What that means for you:** the ★ priority marks in the knowledge map are evidence from 19 real loops. The ○ marks are professional judgment with no evidence behind them for *this* market. Weight your preparation accordingly, and verify version-specific claims (React 19 APIs, browser support) against primary docs.
 

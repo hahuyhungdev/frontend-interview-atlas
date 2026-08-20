@@ -103,6 +103,8 @@ Corpus = 23 substantive interview write-ups, 19 companies, SDE-2/SSE frontend, M
 
 ## 3. Browser & Web Platform ★★
 
+*Workers, Service Workers, IndexedDB and Streams have their own deep dive: [`answers/17-web-platform.md`](./answers/17-web-platform.md).*
+
 - The critical rendering path: parse HTML → DOM, CSS → CSSOM → render tree → layout → paint → composite ★★
 - **`async` vs `defer`** on `<script>`: `defer` preserves order and waits for parse (default choice); `async` fires on arrival and can block parsing ★★★
 - Reflow vs repaint vs composite; which CSS properties are cheap to animate (`transform`, `opacity`) ★★
@@ -205,7 +207,7 @@ Corpus = 23 substantive interview write-ups, 19 companies, SDE-2/SSE frontend, M
 
 ## 9. React — Performance ★★★
 
-*Dominant React topic across the corpus. But note: over-memoization is a graded negative.*
+*Dominant React topic across the corpus. But note: over-memoization is a graded negative. For the practical skill of actually reading the Profiler's flame chart, the Performance panel and heap snapshots — not just the concepts below — see [`answers/18-performance-tooling.md`](./answers/18-performance-tooling.md).*
 
 - Diagnosing with the **React DevTools Profiler** ★★★
 - The five planted bugs of the debugging round: **excess re-renders, missing dependency arrays, expensive computation in render, incorrect list keys, uncleared timers** ★★★
@@ -235,7 +237,7 @@ Corpus = 23 substantive interview write-ups, 19 companies, SDE-2/SSE frontend, M
 
 ## 11. TypeScript ★
 
-*Explicitly required only at Moniepoint ("no `any`, correct generics") — but the market baseline is rising.*
+*Explicitly required only at Moniepoint ("no `any`, correct generics") — but the market baseline is rising. Full depth — generics, mapped/conditional types, `satisfies`, strict-mode migration — is in [`answers/15-typescript.md`](./answers/15-typescript.md).*
 
 - Structural typing, interfaces vs type aliases ★
 - Generics, constraints, defaults ★
@@ -251,6 +253,8 @@ Corpus = 23 substantive interview write-ups, 19 companies, SDE-2/SSE frontend, M
 # D. THE APPLICATION LAYER
 
 ## 12. State Management & Data Fetching ★★
+
+*Explicit state machines — not listed below, and not in the corpus at all — get their own document: [`answers/19-state-machines.md`](./answers/19-state-machines.md), the "derive, don't duplicate" idea from [`core-insights.md`](./core-insights.md) taken further into behavior, not just shape.*
 
 - The four distinct kinds of state: **server, client, URL, form** — and not conflating them ★★
 - Context API: use, limits, re-render cost ★★
@@ -318,6 +322,8 @@ Corpus = 23 substantive interview write-ups, 19 companies, SDE-2/SSE frontend, M
 # E. THE ENGINEERING LAYER
 
 ## 16. Tooling, Build & Delivery ★
+
+*Full depth — why bundlers exist, tree-shaking mechanics, Webpack vs esbuild/SWC vs Vite, module resolution, lockfiles — is in [`answers/16-build-tooling.md`](./answers/16-build-tooling.md).*
 
 - Webpack: bundling, loaders, plugins, **tree shaking**, code splitting ★
 - Vite / esbuild / SWC, dev server vs production build ○
@@ -402,4 +408,4 @@ Corpus = 23 substantive interview write-ups, 19 companies, SDE-2/SSE frontend, M
 
 **If you cover only five things:** the event loop explained aloud → autocomplete-with-debounce built completely → closures/prototypes/`this` at depth → five-minute React re-render debugging → the relocation/retention narrative.
 
-**Largest gap between this map and the corpus:** testing (absent entirely), TypeScript depth, modern server-state libraries, and React 19/RSC. Those are ○ here because this dataset didn't measure them — not because they're safe to skip.
+**Largest gap between this map and the corpus:** testing (absent entirely), TypeScript depth, modern server-state libraries, React 19/RSC, build tooling, Web Workers/Service Workers, and reading performance tools in practice rather than by name. Those are ○ here because this dataset didn't measure them — not because they're safe to skip. Every one of them now has a full document in [`answers/`](./answers/README.md) (15–19, plus 03/04/10/11/12) — the ○ mark says *the corpus is silent*, not *the topic is uncovered here*.
