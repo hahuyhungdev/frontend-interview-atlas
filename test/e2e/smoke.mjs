@@ -238,8 +238,14 @@ try {
   await page.setViewportSize({ width: 1440, height: 900 });
 
   // ------------------------------------------------------- removed routes
-  const navItems = await page.locator('aside nav a').allTextContents();
-  check('navigation has exactly two entries', navItems.length === 2, JSON.stringify(navItems));
+  const navItems = await page.locator('nav[aria-label="Primary"] a').allTextContents();
+  check('primary navigation has exactly two entries', navItems.length === 2, JSON.stringify(navItems));
+
+  // The document index is portalled into the shell sidebar, so the page has one rail.
+  const railCount = await page.locator('aside .doc-index').count();
+  const strayIndex = await page.locator('main .doc-index').count();
+  check('document index lives in the single sidebar', railCount === 1 && strayIndex === 0,
+    `sidebar=${railCount} main=${strayIndex}`);
 
   for (const gone of ['/synthesis', '/knowledge', '/settings']) {
     await page.goto(`${baseUrl}${gone}`, { waitUntil: 'networkidle' });

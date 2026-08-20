@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { NavLink, useParams, useNavigate, Navigate } from 'react-router';
 import { Markdown } from '../../../../shared/components/Markdown';
 import { useDocsIndex, useDoc } from '../../hooks/useDocs';
@@ -92,6 +93,12 @@ export function DocsView() {
   const { groups, status: indexStatus } = useDocsIndex();
   const { doc, status } = useDoc(slug || undefined);
   const scrollerRef = useRef<HTMLDivElement>(null);
+  const [railNode, setRailNode] = useState<HTMLElement | null>(null);
+
+  // The shell renders the rail container, so it only exists after mount.
+  useEffect(() => {
+    setRailNode(document.getElementById('context-rail'));
+  }, []);
 
   // Cross-references between documents route in-app instead of reloading the page.
   const handleDocLinkClick = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -126,36 +133,41 @@ export function DocsView() {
     if (first) return <Navigate to={`/docs/${first.slug}`} replace />;
   }
 
+  const documentIndex = (
+    <nav className="doc-index" aria-label="Study documents">
+      <p className="doc-index-heading">Study Material</p>
+
+      {indexStatus === 'loading' && <p className="doc-note">Loading documents…</p>}
+      {indexStatus === 'error' && (
+        <p className="doc-note doc-note-error" role="alert">
+          Could not load the document list. Is the server running?
+        </p>
+      )}
+
+      {groups.map(([group, entries]) => (
+        <section key={group || 'root'} className="doc-index-group">
+          <p className="doc-index-group-label">{GROUP_LABELS[group] ?? group}</p>
+          <ul>
+            {entries.map((entry) => (
+              <li key={entry.slug}>
+                <NavLink
+                  to={`/docs/${entry.slug}`}
+                  className={({ isActive }) => `doc-index-link${isActive ? ' is-active' : ''}`}
+                >
+                  {entry.title}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </nav>
+  );
+
   return (
     <div className="doc-layout">
-      <nav className="doc-index" aria-label="Study documents">
-        <p className="doc-index-heading">Study Material</p>
-
-        {indexStatus === 'loading' && <p className="doc-note">Loading documents…</p>}
-        {indexStatus === 'error' && (
-          <p className="doc-note doc-note-error" role="alert">
-            Could not load the document list. Is the server running?
-          </p>
-        )}
-
-        {groups.map(([group, entries]) => (
-          <section key={group || 'root'} className="doc-index-group">
-            <p className="doc-index-group-label">{GROUP_LABELS[group] ?? group}</p>
-            <ul>
-              {entries.map((entry) => (
-                <li key={entry.slug}>
-                  <NavLink
-                    to={`/docs/${entry.slug}`}
-                    className={({ isActive }) => `doc-index-link${isActive ? ' is-active' : ''}`}
-                  >
-                    {entry.title}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
-      </nav>
+      {/* Rendered into the shell's sidebar so the app keeps one nav rail. */}
+      {railNode ? createPortal(documentIndex, railNode) : null}
 
       <div className="doc-reader">
         <ReadingProgress target={scrollerRef} />

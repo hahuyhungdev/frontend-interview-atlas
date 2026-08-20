@@ -318,50 +318,39 @@ body {
    DOCS READER LAYOUT
    ========================================================================== */
 
+/* The document index lives in the shell sidebar, so the reader owns the whole
+   main pane and the page has a single navigation rail. */
 .doc-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 1.5rem;
   height: 100%;
-}
-
-@media (min-width: 1024px) {
-  .doc-layout {
-    grid-template-columns: 15rem minmax(0, 1fr);
-    gap: 2rem;
-  }
 }
 
 /* ------------------------------------------------------------- index rail */
 
 .doc-index {
   font-family: var(--font-ui);
-  align-self: start;
-  position: sticky;
-  top: 0;
-  max-height: calc(100vh - 4rem);
-  overflow-y: auto;
-  padding-right: 0.5rem;
+  padding: 1rem 0.75rem 2rem;
 }
 
 .doc-index-heading {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text-muted);
-  margin: 0 0 1rem;
+  margin: 0 0 0.85rem;
+  padding-inline: 0.6rem;
 }
 
-.doc-index-group { margin-bottom: 1.75rem; }
+.doc-index-group { margin-bottom: 1.4rem; }
 
 .doc-index-group-label {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-brand-purple);
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.45rem;
+  padding-inline: 0.6rem;
 }
 
 .doc-index ul { list-style: none; margin: 0; padding: 0; }
@@ -369,11 +358,11 @@ body {
 
 .doc-index-link {
   display: block;
-  padding: 0.6rem 0.85rem;
-  border-radius: 0.6rem;
-  font-size: 0.975rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
   font-weight: 550;
-  line-height: 1.4;
+  line-height: 1.35;
   color: var(--color-text-secondary);
   text-decoration: none;
   border-left: 2px solid transparent;

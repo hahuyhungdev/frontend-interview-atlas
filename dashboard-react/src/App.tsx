@@ -148,7 +148,7 @@ function App() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-bg-primary text-text-primary transition-all duration-200">
       {/* Sidebar navigation */}
-      <aside className="w-full md:w-72 bg-bg-secondary border-b md:border-b-0 md:border-r border-border-main flex flex-col shrink-0 h-auto md:h-screen sticky top-0 z-20">
+      <aside className="w-full md:w-80 bg-bg-secondary border-b md:border-b-0 md:border-r border-border-main flex flex-col shrink-0 h-auto md:h-screen sticky top-0 z-20">
         <div className="p-4 md:p-5 border-b border-border-main flex justify-between items-center shrink-0">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-purple-600 text-white font-bold flex items-center justify-center shadow-lg shadow-purple-600/25">FA</div>
@@ -185,7 +185,7 @@ function App() {
         </div>
 
         {/* Navigation Sidebar links */}
-        <nav className="p-3 md:p-4 flex flex-col gap-1 shrink-0">
+        <nav className="p-3 md:p-4 flex flex-col gap-1 shrink-0" aria-label="Primary">
           <div className="text-xs text-text-muted font-bold uppercase tracking-wider px-2 mb-2">Navigation</div>
           <NavLink to="/" className={navLinkClass}>
             <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/></svg>
@@ -196,6 +196,12 @@ function App() {
             Study Docs
           </NavLink>
         </nav>
+
+        {/* Contextual rail: routes portal their own secondary navigation here,
+            so the shell keeps one sidebar instead of stacking two. */}
+        {!showCategories && (
+          <div id="context-rail" className="flex-1 min-h-0 overflow-y-auto border-t border-border-main/50" />
+        )}
 
         {/* Category filters, only meaningful on the posts grid */}
         {showCategories && (
