@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* Self-hosted so text renders identically on every OS. The previous stacks
+   named macOS/Windows families that simply are not present on Linux, so the
+   browser silently fell through to a generic serif. */
+@import "@fontsource-variable/ibm-plex-sans";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/600.css";
+
 /* Variable mapping for Tailwind v4 theme */
 @theme {
   --color-bg-primary: var(--color-bg-primary);
@@ -24,7 +31,7 @@
 /* Dark is the opt-in palette; :root.light-theme below is the default and is
    applied before first paint by the inline script in index.html. */
 :root {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: 'IBM Plex Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
   color-scheme: dark;
 
   --color-bg-primary: #09090b; /* zinc-950 */
@@ -108,17 +115,19 @@ body {
    ========================================================================== */
 
 :root {
-  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-reading: 'Charter', 'Bitstream Charter', 'Iowan Old Style', 'Source Serif 4',
-                  'Palatino Linotype', Palatino, Georgia, serif;
-  --font-mono: 'JetBrains Mono', 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+  --font-ui: 'IBM Plex Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* Sans for body copy: a serif at screen sizes proved hard to read here, and
+     this pairs with the mono used throughout the code samples. */
+  --font-reading: 'IBM Plex Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
 
   /* Fluid reading scale: ~18px on mobile up to ~21px on a wide screen. */
   --prose-size: clamp(1.125rem, 1.02rem + 0.42vw, 1.3125rem);
   --prose-leading: 1.75;
-  /* Wider than a prose-only measure on purpose: this content is dense with
-     code blocks and tables, which are cramped at a 65ch column. */
-  --prose-measure: 86ch;
+  /* Fixed in rem rather than ch so the column does not resize when the font
+     changes. Wider than a prose-only measure on purpose: this content is dense
+     with code blocks and tables, which are cramped at a 65-character column. */
+  --prose-measure: 50rem;
   --doc-rail-width: 15rem;
   --doc-rail-gap: 3rem;
 
@@ -140,7 +149,6 @@ body {
   color: var(--color-text-primary);
   max-width: var(--prose-measure);
   text-wrap: pretty;
-  font-variant-numeric: oldstyle-nums proportional-nums;
 }
 
 .prose .md-p {

@@ -49,6 +49,18 @@ try {
   check('no raw bold markers leaked', !/\*\*[A-Za-z]/.test(rawMarkup));
 
   // ------------------------------------------------------------- typography
+  // Which family in the reading stack this machine can actually render.
+  const fontReport = await page.evaluate(() => {
+    const stack = getComputedStyle(document.querySelector('.prose')).fontFamily;
+    const families = stack.split(',').map((f) => f.trim().replace(/^["']|["']$/g, ''));
+    const available = families.filter(
+      (f) => !['serif', 'sans-serif', 'monospace'].includes(f) && document.fonts.check(`21px "${f}"`)
+    );
+    return { stack, available, resolved: available[0] ?? `generic ${families[families.length - 1]}` };
+  });
+  check('reading font resolves to a named family, not a generic fallback',
+    !fontReport.resolved.startsWith('generic'), fontReport.resolved);
+
   const fontSize = await page.locator('.prose').first()
     .evaluate((el) => parseFloat(getComputedStyle(el).fontSize));
   check('prose font size is large (>= 18px)', fontSize >= 18, `${fontSize}px`);
