@@ -64,6 +64,32 @@ try {
   check('measure is capped for readability (<= 900px)', measure <= 900, `${Math.round(measure)}px`);
   check('measure is wide enough to read (>= 560px)', measure >= 560, `${Math.round(measure)}px`);
 
+  // Characters per line is the metric that actually matters for reading comfort.
+  const cpl = await page.locator('.doc-article .prose .md-p').first().evaluate((el) => {
+    const probe = document.createElement('span');
+    probe.textContent = '0';
+    probe.style.font = getComputedStyle(el).font;
+    document.body.appendChild(probe);
+    const chWidth = probe.getBoundingClientRect().width;
+    probe.remove();
+    return el.getBoundingClientRect().width / chWidth;
+  });
+  check('line length is in the readable range (55-80 chars)', cpl >= 55 && cpl <= 80,
+    `${Math.round(cpl)} chars/line`);
+
+  // The reading column should sit in the middle of the space left by the rails.
+  const centering = await page.evaluate(() => {
+    const scroller = document.querySelector('.doc-scroller');
+    const header = document.querySelector('.doc-header');
+    if (!scroller || !header) return null;
+    const s = scroller.getBoundingClientRect();
+    const h = header.getBoundingClientRect();
+    return { left: h.left - s.left, right: s.right - h.right };
+  });
+  check('reading column is horizontally centred',
+    centering !== null && Math.abs(centering.left - centering.right) <= 24,
+    centering ? `left=${Math.round(centering.left)} right=${Math.round(centering.right)}` : 'not found');
+
   await page.screenshot({ path: path.join(shotDir, 'docs-desktop.png'), fullPage: false });
 
   // -------------------------------------------------- navigation to a doc with code
@@ -153,6 +179,36 @@ try {
     `${modalText.length} chars`);
   await page.screenshot({ path: path.join(shotDir, 'article-modal.png') });
   await page.keyboard.press('Escape');
+
+  // -------------------------------------------- wide screen: the TOC rail
+  await page.setViewportSize({ width: 1920, height: 1080 });
+  await page.goto(`${baseUrl}/docs/frontend-react-insights`, { waitUntil: 'networkidle' });
+  await page.locator('.doc-article').waitFor({ state: 'visible', timeout: 8000 });
+
+  const wide = await page.evaluate(() => {
+    const scroller = document.querySelector('.doc-scroller');
+    const columns = document.querySelector('.doc-columns');
+    const prose = document.querySelector('.doc-article .prose');
+    const toc = document.querySelector('.doc-toc');
+    if (!scroller || !columns || !prose) return null;
+    const s = scroller.getBoundingClientRect();
+    const c = columns.getBoundingClientRect();
+    const p = prose.getBoundingClientRect();
+    return {
+      left: c.left - s.left,
+      right: s.right - c.right,
+      proseWidth: p.width,
+      railBeside: toc ? toc.getBoundingClientRect().left > p.right - 1 : false,
+    };
+  });
+  check('wide screen keeps the reading block centred',
+    wide !== null && Math.abs(wide.left - wide.right) <= 24,
+    wide ? `left=${Math.round(wide.left)} right=${Math.round(wide.right)}` : 'not found');
+  check('wide screen moves the outline beside the text', wide?.railBeside === true);
+  check('wide screen does not stretch the measure',
+    wide !== null && wide.proseWidth <= 900, `${Math.round(wide?.proseWidth ?? 0)}px`);
+  await page.screenshot({ path: path.join(shotDir, 'docs-wide.png'), fullPage: false });
+  await page.setViewportSize({ width: 1440, height: 900 });
 
   // ------------------------------------------------------- removed routes
   const navItems = await page.locator('aside nav a').allTextContents();
