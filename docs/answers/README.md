@@ -22,6 +22,13 @@ The crawled articles are one author's slice of one market. These four fill what 
 | [`07-modern-react-data.md`](./07-modern-react-data.md) | Request waterfalls, Server Components, Suspense streaming, server vs client state, the four kinds of state, optimistic updates, TypeScript as design | §11–§12 — corpus is frozen ~2021 |
 | [`08-production-engineering.md`](./08-production-engineering.md) | Reading unfamiliar code, incremental migration, observability, incident response, safe rollout, i18n, money/time/text traps, network resilience, judgment, code review | Part 2 of core-insights |
 
+### Files 09–10: completing the partial answers
+
+| File | Covers | Map sections |
+|---|---|---|
+| [`09-machine-coding-part-2.md`](./09-machine-coding-part-2.md) | Full implementations for the eight components `03` listed as specs only: stopwatch, star rating, infinite scroll, step tracker, currency calculator, tooltip, modal, toast | §13 |
+| [`10-dsa.md`](./10-dsa.md) | Every algorithm problem the corpus actually asked, by company, with complexity reasoning and the five patterns that cover them all | §19 — **had no answer file** |
+
 ## How each answer is structured
 
 1. **The spoken answer** — what you actually say, in plain prose. Lead with the mental model, not the definition.

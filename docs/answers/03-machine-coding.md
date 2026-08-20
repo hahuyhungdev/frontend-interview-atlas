@@ -553,7 +553,9 @@ function useCart() {
 
 ---
 
-# 8. Others — Specs & Key Insight
+# 8. Others — Key Insight
+
+> **Full implementations for everything in this section are in [`09-machine-coding-part-2.md`](./09-machine-coding-part-2.md).** The summaries below are the one-line takeaway for each.
 
 **Dynamic n×n grid (Okta ×2)** — full solution in [`02-react.md` §3](./02-react.md). Key insight: derive the max from the grid; clone only the touched row.
 
