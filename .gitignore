@@ -13,3 +13,6 @@ __pycache__/
 
 # Generated artifacts
 graphify-out/
+
+# Playwright artifacts
+.playwright-mcp/

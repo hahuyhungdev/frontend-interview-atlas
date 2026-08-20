@@ -20,7 +20,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedPost, setSelectedPost] = useState<CrawledPost | null>(null);
-  const [theme, setTheme] = useState<string>('dark');
+  const [theme, setTheme] = useState<string>('light');
   
   // Crawler states
   const [crawlUrl, setCrawlUrl] = useState<string>('');
@@ -51,7 +51,7 @@ function App() {
 
   // Theme setup
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
     if (savedTheme === 'light') {
       document.documentElement.classList.add('light-theme');

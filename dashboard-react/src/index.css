@@ -21,10 +21,12 @@
   --color-brand-rose-glow: rgba(244, 63, 94, 0.08);
 }
 
+/* Dark is the opt-in palette; :root.light-theme below is the default and is
+   applied before first paint by the inline script in index.html. */
 :root {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   color-scheme: dark;
-  
+
   --color-bg-primary: #09090b; /* zinc-950 */
   --color-bg-secondary: #0e0e11; /* deeper black/zinc */
   --color-surface: #18181b; /* zinc-900 */
@@ -96,61 +98,6 @@ body {
 
 .copy-code-btn:hover {
   background-color: rgb(107, 114, 128);
-}
-
-/* Markdown prose overrides for modal body */
-.prose h1, .prose h2, .prose h3, .prose h4 {
-  color: var(--color-text-primary);
-  font-weight: 700;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-.prose h1 { font-size: 1.5rem; }
-.prose h2 { font-size: 1.3rem; }
-.prose h3 { font-size: 1.1rem; }
-.prose p { margin-bottom: 1em; }
-.prose blockquote {
-  border-left: 3px solid #a855f7;
-  background-color: var(--color-brand-purple-glow);
-  padding: 12px 16px;
-  border-radius: 0 8px 8px 0;
-  font-style: italic;
-  margin: 1.5em 0;
-}
-.prose ul {
-  list-style-type: disc;
-  padding-left: 1.5em;
-  margin-bottom: 1em;
-}
-.prose ol {
-  list-style-type: decimal;
-  padding-left: 1.5em;
-  margin-bottom: 1em;
-}
-.prose li {
-  margin-bottom: 0.25em;
-}
-.prose pre {
-  background-color: var(--color-bg-secondary);
-  border: 1px solid var(--color-border-main);
-  padding: 1rem;
-  border-radius: 8px;
-  overflow-x: auto;
-  margin: 1.5em 0;
-}
-.prose code {
-  background-color: var(--color-bg-secondary);
-  color: #a855f7;
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-family: monospace;
-  font-size: 0.875em;
-}
-.prose pre code {
-  color: inherit;
-  background-color: transparent;
-  padding: 0;
-  font-size: 1em;
 }
 
 /* ============================================================================
@@ -566,3 +513,130 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .doc-skeleton-line { animation: none; }
 }
+
+/* ---------------------------------------------- article + TOC rail columns */
+
+.doc-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+/* The outline only becomes a side rail when the article can still hold a
+   readable measure beside it — two sidebars plus a rail needs real width. */
+@media (min-width: 1750px) {
+  .doc-columns {
+    grid-template-columns: minmax(0, 1fr) 16rem;
+    gap: 3.5rem;
+  }
+  .doc-toc {
+    position: sticky;
+    top: 1.5rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    margin: 0;
+    order: 2;
+  }
+}
+
+/* Below that width it sits above the body, compact and out of the way. The
+   outline is only useful before you read, so it must not fall to the bottom. */
+@media (max-width: 1749px) {
+  .doc-columns {
+    display: flex;
+    flex-direction: column;
+  }
+  .doc-toc {
+    order: -1;
+    margin: 0 0 2.5rem;
+    max-width: var(--prose-measure);
+  }
+}
+
+.doc-header { margin-bottom: 2.25rem; }
+
+.doc-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-brand-purple);
+  margin: 0 0 0.7rem;
+}
+
+.doc-title {
+  font-family: var(--font-ui);
+  font-size: var(--prose-h1);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--color-text-primary);
+  margin: 0;
+  max-width: var(--prose-measure);
+  text-wrap: balance;
+}
+
+/* ---------------------------------------------------- syntax highlighting */
+/* Token colours for rehype-highlight, themed from our own palette so code
+   blocks stay legible (and contrast-safe) in both light and dark. */
+
+.prose .md-pre code.hljs { display: block; padding: 0; background: transparent; }
+
+.prose .hljs-comment,
+.prose .hljs-quote { color: var(--color-text-muted); font-style: italic; }
+
+.prose .hljs-keyword,
+.prose .hljs-selector-tag,
+.prose .hljs-literal,
+.prose .hljs-type { color: #c084fc; font-weight: 600; }
+
+.prose .hljs-string,
+.prose .hljs-regexp,
+.prose .hljs-addition { color: #34d399; }
+
+.prose .hljs-number,
+.prose .hljs-symbol,
+.prose .hljs-bullet { color: #fbbf24; }
+
+.prose .hljs-title,
+.prose .hljs-title.function_,
+.prose .hljs-section { color: #60a5fa; font-weight: 600; }
+
+.prose .hljs-attr,
+.prose .hljs-attribute,
+.prose .hljs-variable,
+.prose .hljs-template-variable { color: #f472b6; }
+
+.prose .hljs-built_in,
+.prose .hljs-class .hljs-title { color: #22d3ee; }
+
+.prose .hljs-meta,
+.prose .hljs-doctag { color: var(--color-text-muted); }
+
+.prose .hljs-deletion { color: #fb7185; }
+.prose .hljs-emphasis { font-style: italic; }
+.prose .hljs-strong { font-weight: 700; }
+
+/* Darker tokens for the light theme, where the neons above wash out. */
+:root.light-theme .prose .hljs-keyword,
+:root.light-theme .prose .hljs-selector-tag,
+:root.light-theme .prose .hljs-literal,
+:root.light-theme .prose .hljs-type { color: #7c3aed; }
+:root.light-theme .prose .hljs-string,
+:root.light-theme .prose .hljs-regexp,
+:root.light-theme .prose .hljs-addition { color: #047857; }
+:root.light-theme .prose .hljs-number,
+:root.light-theme .prose .hljs-symbol,
+:root.light-theme .prose .hljs-bullet { color: #b45309; }
+:root.light-theme .prose .hljs-title,
+:root.light-theme .prose .hljs-title.function_,
+:root.light-theme .prose .hljs-section { color: #1d4ed8; }
+:root.light-theme .prose .hljs-attr,
+:root.light-theme .prose .hljs-attribute,
+:root.light-theme .prose .hljs-variable,
+:root.light-theme .prose .hljs-template-variable { color: #be185d; }
+:root.light-theme .prose .hljs-built_in,
+:root.light-theme .prose .hljs-class .hljs-title { color: #0e7490; }
+:root.light-theme .prose .md-inline-code { color: #b45309; }

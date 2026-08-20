@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef } from 'react';
-import { NavLink, useParams, Navigate } from 'react-router';
+import { NavLink, useParams, useNavigate, Navigate } from 'react-router';
 import { Markdown } from '../../../../shared/components/Markdown';
 import { useDocsIndex, useDoc } from '../../hooks/useDocs';
 
@@ -7,6 +7,11 @@ const GROUP_LABELS: Record<string, string> = {
   '': 'Overview',
   answers: 'Answer Bank',
 };
+
+/** Removes the document's leading H1 so it is not duplicated under the page header. */
+function stripLeadingH1(markdown: string): string {
+  return markdown.replace(/^\s*#\s+.*\n+/, '');
+}
 
 function ReadingProgress({ target }: { target: React.RefObject<HTMLDivElement | null> }) {
   const barRef = useRef<HTMLDivElement>(null);
@@ -63,26 +68,39 @@ function TableOfContents({ markdown }: { markdown: string }) {
 
   if (headings.length < 3) return null;
 
+  // Long documents list only top-level sections; the full outline is unusable at 30+ entries.
+  const visible = headings.length > 14 ? headings.filter((h) => h.level === 2) : headings;
+
   return (
-    <nav className="doc-toc" aria-label="On this page">
+    <aside className="doc-toc" aria-label="On this page">
       <p className="doc-toc-title">On this page</p>
       <ul>
-        {headings.map((heading) => (
+        {visible.map((heading) => (
           <li key={heading.id} data-level={heading.level}>
             <a href={`#${heading.id}`}>{heading.text}</a>
           </li>
         ))}
       </ul>
-    </nav>
+    </aside>
   );
 }
 
 export function DocsView() {
   const params = useParams();
+  const navigate = useNavigate();
   const slug = params['*'] || '';
   const { groups, status: indexStatus } = useDocsIndex();
   const { doc, status } = useDoc(slug || undefined);
   const scrollerRef = useRef<HTMLDivElement>(null);
+
+  // Cross-references between documents route in-app instead of reloading the page.
+  const handleDocLinkClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    const link = (event.target as HTMLElement).closest<HTMLAnchorElement>('a[data-doc-link]');
+    if (!link) return;
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
+    event.preventDefault();
+    navigate(link.getAttribute('href') || '/docs');
+  };
 
   // A new document should start at the top, not at the previous scroll offset.
   useEffect(() => {
@@ -159,10 +177,19 @@ export function DocsView() {
           )}
 
           {status === 'success' && doc && (
-            <article className="doc-article">
-              <TableOfContents markdown={doc.markdown} />
-              <Markdown source={doc.markdown} />
-            </article>
+            <>
+              <header className="doc-header">
+                {doc.group && <p className="doc-eyebrow">{GROUP_LABELS[doc.group] ?? doc.group}</p>}
+                <h1 className="doc-title">{doc.title}</h1>
+              </header>
+              <div className="doc-columns" onClick={handleDocLinkClick}>
+                <article className="doc-article">
+                  {/* The title is rendered above, so drop the document's own leading H1. */}
+                  <Markdown source={stripLeadingH1(doc.markdown)} docBase={doc.group} />
+                </article>
+                <TableOfContents markdown={doc.markdown} />
+              </div>
+            </>
           )}
         </div>
       </div>
