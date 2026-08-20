@@ -19,7 +19,11 @@
       "destination": "/api/docs/:slug*.json"
     },
     {
-      "source": "/((?!api/).*)",
+      "source": "/docs",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/docs/:slug*",
       "destination": "/index.html"
     }
   ]
