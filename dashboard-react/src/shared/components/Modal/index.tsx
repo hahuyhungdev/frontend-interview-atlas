@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { CrawledPost } from '../../types';
-import { markdownToText } from '../../utils/markdown';
+import { Markdown } from '../Markdown';
 
 interface ModalProps {
   selectedPost: CrawledPost | null;
@@ -21,11 +21,11 @@ export function Modal({ selectedPost, setSelectedPost }: ModalProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs p-4 animate-fade-in" onClick={(e: React.MouseEvent<HTMLDivElement>) => { if ((e.target as HTMLElement).classList.contains('modal-overlay')) setSelectedPost(null); }}>
       <div className="modal-overlay absolute inset-0" onClick={() => setSelectedPost(null)}></div>
-      <div className="relative bg-surface border border-border-main rounded-2xl w-full max-w-4xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden animate-slide-up">
+      <div className="relative bg-surface border border-border-main rounded-2xl w-full max-w-5xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden animate-slide-up">
         <div className="px-6 py-5 border-b border-border-main flex justify-between items-start gap-4">
           <div>
-            <h2 className="text-base font-bold text-text-primary leading-snug">{selectedPost.title}</h2>
-            <div className="flex flex-wrap items-center gap-2.5 text-xs text-text-secondary mt-1">
+            <h2 className="text-xl md:text-2xl font-bold text-text-primary leading-snug">{selectedPost.title}</h2>
+            <div className="flex flex-wrap items-center gap-2.5 text-sm text-text-secondary mt-1.5">
               <span>{selectedPost.date || 'August 2026'}</span>
               <span>•</span>
               <span>{selectedPost.role || 'Frontend Engineer'}</span>
@@ -68,10 +68,8 @@ export function Modal({ selectedPost, setSelectedPost }: ModalProps) {
           </div>
         </div>
         
-        <div className="p-6 overflow-y-auto flex-1 select-text">
-          <div className="whitespace-pre-wrap break-words text-sm leading-relaxed text-text-secondary">
-            {markdownToText(selectedPost.content_markdown)}
-          </div>
+        <div className="px-6 md:px-10 py-8 overflow-y-auto flex-1 select-text">
+          <Markdown source={selectedPost.content_markdown} className="mx-auto" />
         </div>
       </div>
     </div>

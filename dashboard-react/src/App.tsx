@@ -9,6 +9,7 @@ import { ArticlesGridView } from './features/articles';
 import { SynthesisView } from './features/synthesis';
 import { SettingsView } from './features/crawler';
 import { KnowledgeLibrarySection } from './features/knowledge-library';
+import { DocsView } from './features/docs';
 
 // Shared layer imports
 import { Modal } from './shared/components/Modal';
@@ -229,13 +230,13 @@ function App() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-bg-primary text-text-primary transition-all duration-200">
       {/* Sidebar navigation */}
-      <aside className="w-full md:w-64 bg-bg-secondary border-b md:border-b-0 md:border-r border-border-main flex flex-col shrink-0 h-auto md:h-screen sticky top-0 z-20">
+      <aside className="w-full md:w-72 bg-bg-secondary border-b md:border-b-0 md:border-r border-border-main flex flex-col shrink-0 h-auto md:h-screen sticky top-0 z-20">
         <div className="p-4 md:p-5 border-b border-border-main flex justify-between items-center shrink-0">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-purple-600 text-white font-bold flex items-center justify-center shadow-lg shadow-purple-600/25">FA</div>
             <div>
-              <h1 className="text-xs font-bold tracking-wider uppercase text-text-primary">Frontend Army</h1>
-              <p className="text-[10px] text-text-muted">Medium Post Crawler</p>
+              <h1 className="text-sm font-bold tracking-wider uppercase text-text-primary">Interview Atlas</h1>
+              <p className="text-xs text-text-muted">Frontend study workspace</p>
             </div>
           </div>
           <button onClick={toggleTheme} className="p-2 rounded-lg hover:bg-surface text-text-secondary hover:text-text-primary transition-all shrink-0 cursor-pointer" aria-label="Toggle theme">
@@ -251,47 +252,54 @@ function App() {
         <div className="p-4 md:p-5 border-b border-border-main shrink-0">
           <div className="grid grid-cols-3 md:grid-cols-2 gap-2.5 md:gap-3 text-center">
             <div className="bg-surface/40 border border-border-main/50 p-2 md:p-2.5 rounded-xl flex flex-col justify-center">
-              <span className="text-lg md:text-xl font-extrabold text-purple-500 leading-tight">{statistics.postsCount}</span>
-              <span className="text-[9px] text-text-muted font-bold uppercase tracking-wider">Posts</span>
+              <span className="text-2xl md:text-3xl font-extrabold text-purple-500 leading-tight">{statistics.postsCount}</span>
+              <span className="text-[11px] text-text-muted font-bold uppercase tracking-wider">Posts</span>
             </div>
             <div className="bg-surface/40 border border-border-main/50 p-2 md:p-2.5 rounded-xl flex flex-col justify-center">
-              <span className="text-lg md:text-xl font-extrabold text-emerald-500 leading-tight">{statistics.companiesCount}</span>
-              <span className="text-[9px] text-text-muted font-bold uppercase tracking-wider">Companies</span>
+              <span className="text-2xl md:text-3xl font-extrabold text-emerald-500 leading-tight">{statistics.companiesCount}</span>
+              <span className="text-[11px] text-text-muted font-bold uppercase tracking-wider">Companies</span>
             </div>
             <div className="col-span-1 md:col-span-2 bg-surface/40 border border-border-main/50 p-2 rounded-xl flex flex-col justify-center">
               <span className="text-sm md:text-base font-extrabold text-amber-500 leading-tight">{statistics.maxPackage}</span>
-              <span className="text-[9px] text-text-muted font-bold uppercase tracking-wider">Max Package</span>
+              <span className="text-[11px] text-text-muted font-bold uppercase tracking-wider">Max Package</span>
             </div>
           </div>
         </div>
         
         {/* Navigation Sidebar links */}
         <nav className="p-3 md:p-4 flex flex-col gap-1 shrink-0">
-          <div className="text-[10px] text-text-muted font-bold uppercase tracking-wider px-2 mb-1.5">Navigation</div>
+          <div className="text-xs text-text-muted font-bold uppercase tracking-wider px-2 mb-1.5">Navigation</div>
           <NavLink 
             to="/" 
-            className={({ isActive }: { isActive: boolean }) => `flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-xs font-semibold transition-all duration-200 ${isActive ? 'bg-purple-600 text-white shadow-md shadow-purple-600/10' : 'text-text-secondary hover:text-text-primary hover:bg-surface'}`}
+            className={({ isActive }: { isActive: boolean }) => `flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 ${isActive ? 'bg-purple-600 text-white shadow-md shadow-purple-600/10' : 'text-text-secondary hover:text-text-primary hover:bg-surface'}`}
           >
             <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/></svg>
             All Crawled Posts
           </NavLink>
           <NavLink 
             to="/synthesis" 
-            className={({ isActive }: { isActive: boolean }) => `flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-xs font-semibold transition-all duration-200 ${isActive || location.pathname.startsWith('/synthesis') ? 'bg-purple-600 text-white shadow-md shadow-purple-600/10' : 'text-text-secondary hover:text-text-primary hover:bg-surface'}`}
+            className={({ isActive }: { isActive: boolean }) => `flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 ${isActive || location.pathname.startsWith('/synthesis') ? 'bg-purple-600 text-white shadow-md shadow-purple-600/10' : 'text-text-secondary hover:text-text-primary hover:bg-surface'}`}
           >
             <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.082l1.949.835a1 1 0 00.788 0l7-3a1 1 0 000-1.84l-7-3zM2.883 10.962a1 1 0 00-.378 1.342l3 5.5a1 1 0 001.73-.008l3-5.5a1 1 0 10-1.735-.988L6.852 14.3l-2.627-4.819a1 1 0 00-1.342-.378zM17.117 10.962a1 1 0 01.378 1.342l-3 5.5a1 1 0 01-1.73-.008l-3-5.5a1 1 0 111.735-.988l1.649 3.023 2.627-4.819a1 1 0 011.342-.378z"/></svg>
             Synthesized Knowledge
           </NavLink>
           <NavLink
             to="/knowledge"
-            className={({ isActive }: { isActive: boolean }) => `flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-xs font-semibold transition-all duration-200 ${isActive ? 'bg-purple-600 text-white shadow-md shadow-purple-600/10' : 'text-text-secondary hover:text-text-primary hover:bg-surface'}`}
+            className={({ isActive }: { isActive: boolean }) => `flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 ${isActive ? 'bg-purple-600 text-white shadow-md shadow-purple-600/10' : 'text-text-secondary hover:text-text-primary hover:bg-surface'}`}
           >
             <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h11a1 1 0 100-2H4V5h11a1 1 0 100-2H4z"/><path d="M8 6a1 1 0 011-1h7a2 2 0 012 2v8a1 1 0 11-2 0V7H9a1 1 0 01-1-1z"/><path d="M6 8a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm0 3a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1z"/></svg>
             Codex Study Library
           </NavLink>
-          <NavLink 
-            to="/settings" 
-            className={({ isActive }: { isActive: boolean }) => `flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-xs font-semibold transition-all duration-200 ${isActive ? 'bg-purple-600 text-white shadow-md shadow-purple-600/10' : 'text-text-secondary hover:text-text-primary hover:bg-surface'}`}
+          <NavLink
+            to="/docs"
+            className={({ isActive }: { isActive: boolean }) => `flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 ${isActive || location.pathname.startsWith('/docs') ? 'bg-purple-600 text-white shadow-md shadow-purple-600/10' : 'text-text-secondary hover:text-text-primary hover:bg-surface'}`}
+          >
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd"/></svg>
+            Study Docs
+          </NavLink>
+          <NavLink
+            to="/settings"
+            className={({ isActive }: { isActive: boolean }) => `flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 ${isActive ? 'bg-purple-600 text-white shadow-md shadow-purple-600/10' : 'text-text-secondary hover:text-text-primary hover:bg-surface'}`}
           >
             <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.533 1.533 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"/></svg>
             Crawler Settings
@@ -300,11 +308,11 @@ function App() {
         
         {/* Categories filters menu tags */}
         <div className="p-3 md:p-4 flex-1 overflow-y-auto border-t border-border-main/50 max-h-48 md:max-h-none">
-          <div className="text-[10px] text-text-muted font-bold uppercase tracking-wider px-2 mb-2">Categories</div>
+          <div className="text-xs text-text-muted font-bold uppercase tracking-wider px-2 mb-2">Categories</div>
           <div className="flex flex-wrap gap-1.5 px-1">
             <button 
               onClick={() => setSelectedCategory('all')} 
-              className={`cursor-pointer px-2.5 py-1 rounded-full text-[11px] font-semibold border transition-all ${selectedCategory === 'all' ? 'bg-purple-600 border-purple-500 text-white' : 'bg-surface border-border-main text-text-secondary hover:text-text-primary'}`}
+              className={`cursor-pointer px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-all ${selectedCategory === 'all' ? 'bg-purple-600 border-purple-500 text-white' : 'bg-surface border-border-main text-text-secondary hover:text-text-primary'}`}
             >
               📁 all
             </button>
@@ -312,7 +320,7 @@ function App() {
               <button 
                 key={tag} 
                 onClick={() => setSelectedCategory(tag)} 
-                className={`cursor-pointer px-2.5 py-1 rounded-full text-[11px] font-semibold border transition-all ${selectedCategory === tag ? 'bg-purple-600 border-purple-500 text-white' : 'bg-surface border-border-main text-text-secondary hover:text-text-primary'}`}
+                className={`cursor-pointer px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-all ${selectedCategory === tag ? 'bg-purple-600 border-purple-500 text-white' : 'bg-surface border-border-main text-text-secondary hover:text-text-primary'}`}
               >
                 # {tag}
               </button>
@@ -339,6 +347,7 @@ function App() {
             />
           } />
           <Route path="/knowledge" element={<KnowledgeLibrarySection />} />
+          <Route path="/docs/*" element={<DocsView />} />
           <Route path="/settings" element={
             <SettingsView 
               crawlUrl={crawlUrl} 

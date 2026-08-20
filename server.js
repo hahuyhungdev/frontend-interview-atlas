@@ -43,6 +43,69 @@ function normalizeMediumUrl(value) {
   }
 }
 
+// Reading order for the study documents; anything unlisted sorts alphabetically after these.
+const DOC_ORDER = [
+  'frontend-react-insights',
+  'frontend-knowledge-map',
+  'core-insights',
+];
+
+function readDocTitle(filePath, fallback) {
+  try {
+    const heading = fs.readFileSync(filePath, 'utf-8').match(/^#\s+(.+)$/m);
+    return heading ? heading[1].trim() : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+/**
+ * Builds a slug -> absolute path map by walking the docs directory.
+ *
+ * Requests are resolved by looking a slug up in this map, so a user-supplied
+ * string is never turned into a filesystem path and traversal is impossible
+ * by construction rather than by sanitising the input.
+ */
+function collectDocs(docsDir) {
+  const docs = new Map();
+  if (!fs.existsSync(docsDir)) return docs;
+
+  const walk = (dir, prefix) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const absolute = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        walk(absolute, prefix ? `${prefix}/${entry.name}` : entry.name);
+        continue;
+      }
+      if (!entry.isFile() || !entry.name.endsWith('.md')) continue;
+
+      const base = entry.name.replace(/\.md$/, '');
+      const slug = prefix ? `${prefix}/${base}` : base;
+      docs.set(slug, {
+        slug,
+        group: prefix,
+        path: absolute,
+        title: readDocTitle(absolute, base),
+      });
+    }
+  };
+
+  walk(docsDir, '');
+  return docs;
+}
+
+function sortDocs(docs) {
+  const rank = (slug) => {
+    const index = DOC_ORDER.indexOf(slug);
+    return index === -1 ? DOC_ORDER.length : index;
+  };
+  return [...docs.values()].sort((a, b) => {
+    if (Boolean(a.group) !== Boolean(b.group)) return a.group ? 1 : -1;
+    const byRank = rank(a.slug) - rank(b.slug);
+    return byRank !== 0 ? byRank : a.slug.localeCompare(b.slug);
+  });
+}
+
 async function runCrawler(url) {
   return execFileAsync(path.join(__dirname, 'run_crawler.sh'), url ? [url] : [], {
     cwd: __dirname,
@@ -53,6 +116,7 @@ async function runCrawler(url) {
 
 function createApp({
   dataDir = path.join(__dirname, 'data'),
+  docsDir = path.join(__dirname, 'docs'),
   runCrawler: crawl = runCrawler,
 } = {}) {
   const app = express();
@@ -83,6 +147,37 @@ function createApp({
       return res.json({ success: true, knowledge: buildKnowledgeLibrary(articles, synthesis) });
     } catch (error) {
       return res.status(500).json({ success: false, error: 'Failed to load the Codex study library.' });
+    }
+  });
+
+  app.get('/api/docs', (req, res) => {
+    try {
+      const docs = sortDocs(collectDocs(docsDir))
+        .map(({ slug, title, group }) => ({ slug, title, group }));
+      return res.json({ success: true, docs });
+    } catch (error) {
+      return res.status(500).json({ success: false, error: 'Failed to list study documents.' });
+    }
+  });
+
+  app.get('/api/docs/*', (req, res) => {
+    try {
+      const slug = req.params[0];
+      const doc = collectDocs(docsDir).get(slug);
+      if (!doc) {
+        return res.status(404).json({ success: false, error: 'Document not found.' });
+      }
+      return res.json({
+        success: true,
+        doc: {
+          slug: doc.slug,
+          title: doc.title,
+          group: doc.group,
+          markdown: fs.readFileSync(doc.path, 'utf-8'),
+        },
+      });
+    } catch (error) {
+      return res.status(500).json({ success: false, error: 'Failed to read the document.' });
     }
   });
 

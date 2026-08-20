@@ -54,3 +54,13 @@ export interface KnowledgeLibrary {
   model: string;
   source_count: number;
 }
+
+export interface DocSummary {
+  slug: string;
+  title: string;
+  group: string;
+}
+
+export interface DocDetail extends DocSummary {
+  markdown: string;
+}
