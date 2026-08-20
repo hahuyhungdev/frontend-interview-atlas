@@ -239,4 +239,12 @@ if (require.main === module) {
   });
 }
 
-module.exports = { app, createApp, HOST, normalizeMediumUrl };
+// Attach properties to the app function so that standard destructured imports
+// like: const { app, createApp, HOST } = require('./server') still work.
+app.app = app;
+app.createApp = createApp;
+app.HOST = HOST;
+app.normalizeMediumUrl = normalizeMediumUrl;
+
+module.exports = app;
+
