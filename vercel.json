@@ -1,0 +1,10 @@
+{
+  "outputDirectory": "dashboard-react/dist",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
