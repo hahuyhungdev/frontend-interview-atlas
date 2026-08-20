@@ -62,7 +62,11 @@ test('automatically refreshes the Codex study library after a successful crawl',
   assert.equal(response.status, 200);
   assert.equal(result.success, true);
   assert.equal(result.knowledge.model, 'Codex-derived from crawled data');
-  assert.equal(result.knowledge.categories[0].entries[0].source_url, 'https://medium.com/example/react-state');
+  assert.equal(
+    result.knowledge.categories[0].entries[0].source_url,
+    'https://freedium-mirror.cfd/https://medium.com/example/react-state',
+    'study entries link to the Freedium mirror so the article is readable past the paywall'
+  );
 });
 
 test('rejects a cross-origin crawl request before starting the crawler', async (t) => {
@@ -114,7 +118,11 @@ test('serves a Codex-derived library directly from sourced crawl data without an
 
   assert.equal(response.status, 200);
   assert.equal(result.knowledge.model, 'Codex-derived from crawled data');
-  assert.equal(result.knowledge.categories[0].entries[0].source_url, 'https://medium.com/example/react-state');
+  assert.equal(
+    result.knowledge.categories[0].entries[0].source_url,
+    'https://freedium-mirror.cfd/https://medium.com/example/react-state',
+    'study entries link to the Freedium mirror so the article is readable past the paywall'
+  );
 });
 
 test('lists the study documents available under the docs directory', async (t) => {

@@ -120,10 +120,11 @@ try {
   await page.screenshot({ path: path.join(shotDir, 'docs-desktop.png'), fullPage: false });
 
   // -------------------------------------------------- navigation to a doc with code
-  await page.getByRole('link', { name: /Answer Bank 1/i }).click();
+  // Target by href: "Answer Bank 1" also matches Answer Bank 10, 11 and 12.
+  await page.locator('a[href="/docs/answers/01-javascript"]').click();
   await page.waitForURL(/answers\/01-javascript/);
   // The URL changes before React commits; wait for the rendered document to catch up.
-  await page.locator('.doc-title', { hasText: 'Answer Bank 1' }).waitFor({ timeout: 8000 });
+  await page.locator('.doc-title', { hasText: 'JavaScript Core & Async' }).waitFor({ timeout: 8000 });
   await page.locator('.prose .md-pre').first().waitFor({ state: 'visible', timeout: 5000 });
 
   const preCount = await page.locator('.prose .md-pre').count();
@@ -138,7 +139,7 @@ try {
   const activeNav = await page.locator('.doc-index-link.is-active').allTextContents();
   check('exactly one nav item is active', activeNav.length === 1, JSON.stringify(activeNav));
   check('active nav matches the open document',
-    activeNav[0]?.includes('Answer Bank 1'), activeNav[0]);
+    activeNav[0]?.includes('JavaScript Core & Async'), activeNav[0]);
 
   // The reader must show the document, not an outline that fills the viewport.
   const titleBox = await page.locator('.doc-title').boundingBox();
@@ -194,7 +195,7 @@ try {
     .then(() => check('cross-document link navigates in-app', true, page.url()))
     .catch(() => check('cross-document link navigates in-app', false, page.url()));
   await page.goBack();
-  await page.locator('.doc-title', { hasText: 'Answer Bank 1' }).waitFor({ timeout: 8000 });
+  await page.locator('.doc-title', { hasText: 'JavaScript Core & Async' }).waitFor({ timeout: 8000 });
 
   // ---------------------------------------------------- article modal markdown
   await page.goto(`${baseUrl}/`, { waitUntil: 'networkidle' });

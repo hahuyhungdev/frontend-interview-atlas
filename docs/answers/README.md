@@ -29,6 +29,13 @@ The crawled articles are one author's slice of one market. These four fill what 
 | [`09-machine-coding-part-2.md`](./09-machine-coding-part-2.md) | Full implementations for the eight components `03` listed as specs only: stopwatch, star rating, infinite scroll, step tracker, currency calculator, tooltip, modal, toast | §13 |
 | [`10-dsa.md`](./10-dsa.md) | Every algorithm problem the corpus actually asked, by company, with complexity reasoning and the five patterns that cover them all | §19 — **had no answer file** |
 
+### Files 11–12: depth on React and CSS
+
+| File | Covers | Map sections |
+|---|---|---|
+| [`11-css-deep.md`](./11-css-deep.md) | Box model, formatting contexts, stacking contexts, cascade layers, Flexbox/Grid in full, container queries, `:has()`, custom properties and tokens, `oklch`, fluid type, logical properties, animation cost, motion preferences | §5 — expanded from a short section |
+| [`12-react-deep.md`](./12-react-deep.md) | Refs in depth, `useImperativeHandle`, error boundaries, `useTransition`/`useDeferredValue`, Suspense for data, React 19 actions and `useOptimistic`, slots and state reducers, polymorphic TS, portals, Strict Mode, `useSyncExternalStore`, hydration mismatches | §7–§10 — beyond hooks and re-renders |
+
 ## How each answer is structured
 
 1. **The spoken answer** — what you actually say, in plain prose. Lead with the mental model, not the definition.
