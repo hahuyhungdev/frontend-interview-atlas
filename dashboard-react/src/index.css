@@ -147,7 +147,7 @@ body {
   font-size: var(--prose-size);
   line-height: var(--prose-leading);
   color: var(--color-text-primary);
-  max-width: var(--prose-measure);
+  max-width: min(var(--prose-measure), 100%);
   text-wrap: pretty;
 }
 
@@ -431,14 +431,16 @@ body {
 
 /* The header and the body share one centred column so their left edges line
    up, and the whole reading block sits in the middle of the available space. */
+/* min(..., 100%) throughout so a measure wider than the available space can
+   never push content outside its container and get clipped. */
 .doc-header,
 .doc-columns {
-  max-width: var(--prose-measure);
+  max-width: min(var(--prose-measure), 100%);
   margin-inline: auto;
 }
 
 .doc-article {
-  max-width: var(--prose-measure);
+  max-width: min(var(--prose-measure), 100%);
   min-width: 0;
 }
 
@@ -576,6 +578,9 @@ body {
   .doc-columns {
     display: flex;
     flex-direction: column;
+    /* Without this the grid rule's align-items:start leaks in, and children
+       size to their own max-width instead of the container, overflowing it. */
+    align-items: stretch;
   }
   .doc-toc {
     order: -1;

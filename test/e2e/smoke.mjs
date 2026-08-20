@@ -89,6 +89,21 @@ try {
   check('line length is in the readable range (55-95 chars)', cpl >= 55 && cpl <= 95,
     `${Math.round(cpl)} chars/line`);
 
+  // Page-level overflow does not catch clipping inside the scroller, which has
+  // its own overflow context. Measure that box directly.
+  const clipping = await page.evaluate(() => {
+    const chain = ['main', '.doc-layout', '.doc-reader', '.doc-scroller', '.doc-columns', '.doc-article', '.doc-article .prose'];
+    const boxes = chain.map((sel) => {
+      const el = document.querySelector(sel);
+      return el ? { sel, client: el.clientWidth, scroll: el.scrollWidth } : { sel, client: -1, scroll: -1 };
+    });
+    const scroller = document.querySelector('.doc-scroller');
+    return { boxes, overflow: scroller ? scroller.scrollWidth - scroller.clientWidth : -1 };
+  });
+  if (process.env.DEBUG_BOX) console.table(clipping.boxes);
+  check('article does not overflow its scroll container horizontally',
+    clipping.overflow <= 0, `${clipping.overflow}px overflow`);
+
   // The reading column should sit in the middle of the space left by the rails.
   const centering = await page.evaluate(() => {
     const scroller = document.querySelector('.doc-scroller');
