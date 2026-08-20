@@ -20,11 +20,11 @@
     },
     {
       "source": "/docs",
-      "destination": "/index.html"
+      "destination": "/index"
     },
     {
       "source": "/docs/:slug*",
-      "destination": "/index.html"
+      "destination": "/index"
     }
   ]
 }
