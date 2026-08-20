@@ -1,6 +1,10 @@
-# Medium Posts Crawler & Knowledge Synthesizer
+# Frontend Interview Atlas
 
-This project is a complete Medium crawler and knowledge synthesis dashboard designed specifically to parse and analyze the interview experiences, salary insights, and preparation strategies shared by **Gourav Hammad** (Founder of *Frontend Army*).
+A frontend interview knowledge base with its own ingestion pipeline. It crawls real interview experiences, synthesizes them into study material, and serves the result through a dashboard.
+
+The source corpus is the interview experiences, salary insights, and preparation strategies published by **Gourav Hammad** (Founder of *Frontend Army*) on Medium.
+
+The distilled study material lives in [`docs/`](./docs) — see [Study Material](#study-material) below.
 
 ## Project Features
 
@@ -32,6 +36,22 @@ This project is a complete Medium crawler and knowledge synthesis dashboard desi
   - `index.html`: Structure and layout.
   - `index.css`: Dark zinc theme & responsive styles.
   - `index.js`: Filter logic, tab toggles, modal rendering, and API synchronization.
+- **`docs/`**: Study material distilled from the crawled corpus (see below).
+
+---
+
+## Study Material
+
+The crawler produces raw data; `docs/` is what that data was for. Read in this order:
+
+| Document | What it is |
+|---|---|
+| [`docs/frontend-react-insights.md`](./docs/frontend-react-insights.md) | Analysis of the corpus — what 23 interview loops across 19 companies actually reveal, including which rejection reasons repeat |
+| [`docs/frontend-knowledge-map.md`](./docs/frontend-knowledge-map.md) | Every concept to cover, in 21 categories across 6 layers, priority-marked by how much each decides outcomes |
+| [`docs/core-insights.md`](./docs/core-insights.md) | The eight mental models that generate the answers, plus what an interview corpus structurally cannot teach |
+| [`docs/answers/`](./docs/answers) | Model answers and reference implementations — 8 files covering JavaScript, React, machine coding, CSS/a11y/design, testing, security, modern data patterns, and production engineering |
+
+Files `01`–`04` of the answer bank come from the corpus. Files `05`–`08` fill the gaps the corpus never covered — testing, security, Server Components, and the production work nobody interviews on.
 
 ---
 

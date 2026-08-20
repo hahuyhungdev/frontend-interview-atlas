@@ -1,7 +1,7 @@
 {
-  "name": "medium-posts-crawler",
+  "name": "frontend-interview-atlas",
   "version": "1.0.0",
-  "description": "Medium posts crawler and knowledge synthesizer dashboard",
+  "description": "Frontend interview knowledge base: crawls real interview experiences, synthesizes them into study material, and serves it through a dashboard",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
