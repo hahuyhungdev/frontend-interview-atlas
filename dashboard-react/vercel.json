@@ -1,0 +1,26 @@
+{
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/data",
+      "destination": "/api/data.json"
+    },
+    {
+      "source": "/api/knowledge",
+      "destination": "/api/knowledge.json"
+    },
+    {
+      "source": "/api/docs",
+      "destination": "/api/docs.json"
+    },
+    {
+      "source": "/api/docs/:slug*",
+      "destination": "/api/docs/:slug*.json"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ]
+}
