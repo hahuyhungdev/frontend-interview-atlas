@@ -61,7 +61,7 @@ try {
   check('line height is comfortable (>= 1.6)', lineHeight >= 1.6, lineHeight.toFixed(2));
 
   const measure = await page.locator('.prose').first().evaluate((el) => el.getBoundingClientRect().width);
-  check('measure is capped for readability (<= 900px)', measure <= 900, `${Math.round(measure)}px`);
+  check('measure is capped for readability (<= 1000px)', measure <= 1000, `${Math.round(measure)}px`);
   check('measure is wide enough to read (>= 560px)', measure >= 560, `${Math.round(measure)}px`);
 
   // Characters per line is the metric that actually matters for reading comfort.
@@ -74,7 +74,7 @@ try {
     probe.remove();
     return el.getBoundingClientRect().width / chWidth;
   });
-  check('line length is in the readable range (55-80 chars)', cpl >= 55 && cpl <= 80,
+  check('line length is in the readable range (55-95 chars)', cpl >= 55 && cpl <= 95,
     `${Math.round(cpl)} chars/line`);
 
   // The reading column should sit in the middle of the space left by the rails.
@@ -206,7 +206,7 @@ try {
     wide ? `left=${Math.round(wide.left)} right=${Math.round(wide.right)}` : 'not found');
   check('wide screen moves the outline beside the text', wide?.railBeside === true);
   check('wide screen does not stretch the measure',
-    wide !== null && wide.proseWidth <= 900, `${Math.round(wide?.proseWidth ?? 0)}px`);
+    wide !== null && wide.proseWidth <= 1000, `${Math.round(wide?.proseWidth ?? 0)}px`);
   await page.screenshot({ path: path.join(shotDir, 'docs-wide.png'), fullPage: false });
   await page.setViewportSize({ width: 1440, height: 900 });
 

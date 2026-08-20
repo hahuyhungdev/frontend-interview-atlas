@@ -116,8 +116,9 @@ body {
   /* Fluid reading scale: ~18px on mobile up to ~21px on a wide screen. */
   --prose-size: clamp(1.125rem, 1.02rem + 0.42vw, 1.3125rem);
   --prose-leading: 1.75;
-  /* ~66 characters per line: the middle of the 45-75 readable range. */
-  --prose-measure: 66ch;
+  /* Wider than a prose-only measure on purpose: this content is dense with
+     code blocks and tables, which are cramped at a 65ch column. */
+  --prose-measure: 86ch;
   --doc-rail-width: 15rem;
   --doc-rail-gap: 3rem;
 
