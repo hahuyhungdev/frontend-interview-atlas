@@ -1,4 +1,4 @@
-# Answer Bank 2 — React
+# React — Rendering & Hooks
 
 Model answers for §7–§10 of the [knowledge map](../frontend-knowledge-map.md). Note the corpus pattern: nobody was rejected for not knowing a React API. The React questions that decide loops are about **why React behaves as it does**, **re-render control**, and **component API design**.
 
@@ -520,4 +520,4 @@ Use plain `import()` for non-component code — a date library, a PDF generator,
 
 ---
 
-*Next: [`03-machine-coding.md`](./03-machine-coding.md) — reference implementations for the ten components.*
+*Next: [`07-machine-coding-core.md`](./07-machine-coding-core.md) — reference implementations for the ten components.*

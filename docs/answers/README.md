@@ -1,40 +1,40 @@
-# Frontend Answer Bank
+# Answer Bank
 
-Model answers for the concepts in [`../frontend-knowledge-map.md`](../frontend-knowledge-map.md), derived from the interview corpus analyzed in [`../frontend-react-insights.md`](../frontend-react-insights.md).
+One document per topic, in reading order. Model answers for the concepts in [`../frontend-knowledge-map.md`](../frontend-knowledge-map.md), grounded in the corpus analysed in [`../frontend-react-insights.md`](../frontend-react-insights.md).
 
-## Files
+## Topics
 
-| File | Covers | Map sections |
-|---|---|---|
-| [`01-javascript.md`](./01-javascript.md) | Event loop, closures, `this`, prototypes, coercion, deep clone, currying, memoize, debounce/throttle, promises, race conditions, memory leaks, design patterns | §1–§2 |
-| [`02-react.md`](./02-react.md) | Reconciliation, keys, re-render causes, hooks, stale closures, performance debugging, derived state, compound components, recursive trees, context, code splitting | §7–§10 |
-| [`03-machine-coding.md`](./03-machine-coding.md) | Full implementations: autocomplete, dropdown, pagination, trees, progress queue, data table, cart, plus specs for eight more | §13 |
-| [`04-css-a11y-design.md`](./04-css-a11y-design.md) | Centering, stacking contexts, Flexbox vs Grid, animation cost, accessibility, event delegation, system design skeleton, rendering strategy, Core Web Vitals, behavioral | §4–§6, §14–§15, §21 |
+| # | Topic | Covers | Map |
+|---|---|---|---|
+| 01 | [JavaScript — Core & Async](./01-javascript.md) | Event loop, closures, `this`, prototypes, coercion, deep clone, currying, memoize, debounce/throttle, promises, race conditions, memory leaks, design patterns | §1–§2 |
+| 02 | [React — Rendering & Hooks](./02-react-core.md) | Reconciliation, keys, the three causes of re-render, hooks, stale closures, the five-bug debugging scan, derived state, compound components, recursive trees, context, code splitting | §7–§10 |
+| 03 | [React — Advanced Patterns & React 19](./03-react-advanced.md) | Refs' three jobs, `useImperativeHandle`, error boundaries, `useTransition` vs debouncing, Suspense for data, React 19 actions and `useOptimistic`, slots, state reducers, polymorphic TS, portals, Strict Mode, `useSyncExternalStore`, hydration | §7–§10 |
+| 04 | [React — Data Fetching, State & TypeScript](./04-react-data.md) | Request waterfalls, Server Components, streaming, server state as a cache, the four kinds of state, URL state, optimistic updates, TypeScript as design | §11–§12 |
+| 05 | [CSS & Layout](./05-css.md) | Box model, formatting contexts, stacking contexts, cascade layers, Flexbox and Grid in full, sticky's silent failures, container queries, `:has()`, tokens, `oklch`, fluid type, logical properties, animation cost | §5 |
+| 06 | [Accessibility](./06-accessibility.md) | The four layers, roving tabindex, ARIA state, focus management, event delegation | §6 |
+| 07 | [Machine Coding — Core Components](./07-machine-coding-core.md) | Autocomplete, dropdown, pagination, recursive trees, progress queue, data table, cart, dynamic grid | §13 |
+| 08 | [Machine Coding — More Components](./08-machine-coding-more.md) | Stopwatch, star rating, infinite scroll, step tracker, currency calculator, tooltip, modal, toast | §13 |
+| 09 | [Frontend System Design](./09-system-design.md) | The skeleton, rendering strategy per surface, caching layers, realtime transport, the worked publishing-platform and logger designs, Core Web Vitals | §14–§15 |
+| 10 | [Testing](./10-testing.md) | Testing as a design signal, what to test, the trophy, RTL + MSW, the race-condition test, flakiness, E2E scope, TDD | §17 |
+| 11 | [Security & the Browser Model](./11-security.md) | Same-origin policy, what CORS really does, XSS as a context problem, React's four holes, CSRF, token storage, CSP, third-party scripts, supply chain | §18 |
+| 12 | [Production Engineering](./12-production.md) | Reading unfamiliar code, incremental migration, observability, incident response, safe rollout, i18n, money/time/text traps, network resilience, judgment, code review | Part 2 of core-insights |
+| 13 | [DSA for Frontend](./13-dsa.md) | Every algorithm problem the corpus asked, by company, with complexity reasoning and the five patterns they reduce to | §19 |
+| 14 | [Behavioural & Engineering Maturity](./14-behavioural.md) | STAR, resume defence, relocation and retention, disagreement, production debugging | §21 |
 
-### Files 05–08: the gaps the corpus never covered
+**Why some topics span two files:** React and Machine Coding are large enough that one document would be unreadable. React splits by depth (core → advanced → data); Machine Coding splits by component set. Everything else is one topic, one file.
 
-The crawled articles are one author's slice of one market. These four fill what that slice structurally could not contain — see [`../core-insights.md`](../core-insights.md) Part 2 for why each is missing.
+## Where each topic's knowledge comes from
 
-| File | Covers | Map sections |
-|---|---|---|
-| [`05-testing.md`](./05-testing.md) | Testing as a design signal, what to test, the trophy, RTL + MSW, the race-condition test, flakiness, E2E scope, TDD | §17 — **zero corpus coverage** |
-| [`06-security.md`](./06-security.md) | Same-origin policy, what CORS really does, XSS as a context problem, React's four holes, CSRF, token storage, CSP, third-party scripts, supply chain | §18 — one passing mention |
-| [`07-modern-react-data.md`](./07-modern-react-data.md) | Request waterfalls, Server Components, Suspense streaming, server vs client state, the four kinds of state, optimistic updates, TypeScript as design | §11–§12 — corpus is frozen ~2021 |
-| [`08-production-engineering.md`](./08-production-engineering.md) | Reading unfamiliar code, incremental migration, observability, incident response, safe rollout, i18n, money/time/text traps, network resilience, judgment, code review | Part 2 of core-insights |
+The corpus is one author's 23 articles. It covers some topics heavily and others not at all, so roughly a third of this answer bank is knowledge added to complete the picture. This table says which is which.
 
-### Files 09–10: completing the partial answers
+| Provenance | Topics |
+|---|---|
+| **Corpus questions, answers written here** | 01, 02, 07, 13 — they asked, the answers and code are added |
+| **Corpus named it, implementations added** | 08, 09 — components and designs were listed as prompts only |
+| **Barely in the corpus** | 05 (basic CSS only), 06 (graded but never explained), 14 |
+| **Not in the corpus at all** | 03, 04, 10, 11, 12 — added because the job needs them, *not* because this market was observed asking |
 
-| File | Covers | Map sections |
-|---|---|---|
-| [`09-machine-coding-part-2.md`](./09-machine-coding-part-2.md) | Full implementations for the eight components `03` listed as specs only: stopwatch, star rating, infinite scroll, step tracker, currency calculator, tooltip, modal, toast | §13 |
-| [`10-dsa.md`](./10-dsa.md) | Every algorithm problem the corpus actually asked, by company, with complexity reasoning and the five patterns that cover them all | §19 — **had no answer file** |
-
-### Files 11–12: depth on React and CSS
-
-| File | Covers | Map sections |
-|---|---|---|
-| [`11-css-deep.md`](./11-css-deep.md) | Box model, formatting contexts, stacking contexts, cascade layers, Flexbox/Grid in full, container queries, `:has()`, custom properties and tokens, `oklch`, fluid type, logical properties, animation cost, motion preferences | §5 — expanded from a short section |
-| [`12-react-deep.md`](./12-react-deep.md) | Refs in depth, `useImperativeHandle`, error boundaries, `useTransition`/`useDeferredValue`, Suspense for data, React 19 actions and `useOptimistic`, slots and state reducers, polymorphic TS, portals, Strict Mode, `useSyncExternalStore`, hydration mismatches | §7–§10 — beyond hooks and re-renders |
+**What that means for you:** the ★ priority marks in the knowledge map are evidence from 19 real loops. The ○ marks are professional judgment with no evidence behind them for *this* market. Weight your preparation accordingly, and verify version-specific claims (React 19 APIs, browser support) against primary docs.
 
 ## How each answer is structured
 
@@ -43,22 +43,23 @@ The crawled articles are one author's slice of one market. These four fill what 
 3. **The follow-up** they will ask next.
 4. **The trap** — the wrong answer that sounds right.
 
-## Three things that run through all four files
+## Three things that run through every topic
 
 **Say the trade-off unprompted.** The corpus repeats this more than any other point. Okta: *"more interested in why I chose a particular implementation than simply getting the correct output."* A working answer with no reasoning scores below a slightly worse answer with clear reasoning.
 
-**Don't over-apply optimizations.** Moniepoint's code-review round penalizes an unnecessary `useMemo`. Knowing when *not* to reach for a tool is graded as heavily as knowing the tool.
+**Don't over-apply optimisations.** Moniepoint's code-review round penalises an unnecessary `useMemo`. Knowing when *not* to reach for a tool is graded as heavily as knowing the tool.
 
 **Cover all four UI states.** Loading, empty, error, success. Missing states is the most common gap across every machine-coding write-up in the corpus.
 
 ## Source corrections
 
-Three "correct answers" in the crawled articles are wrong or outdated. All are marked **[SOURCE ERROR]** in `01-javascript.md`:
+Four "correct answers" in the crawled articles are wrong or outdated. The first three are marked **[SOURCE ERROR]** in [`01-javascript.md`](./01-javascript.md):
 
 | Article claim | Reality |
 |---|---|
 | `sort` returns a new array | `sort` mutates in place and returns the **same** reference. `toSorted()` returns a new one. |
-| `JSON.parse(JSON.stringify(obj))` is the deep-clone answer | Legacy. `structuredClone()` handles `Date`, `Map`, `Set`, and cycles; the JSON hack silently drops or corrupts all of them. |
+| `JSON.parse(JSON.stringify(obj))` is the deep-clone answer | Legacy. `structuredClone()` handles `Date`, `Map`, `Set` and cycles; the JSON hack silently drops or corrupts all of them. |
 | Iterative `flat` using `result.unshift(item)` | O(n²). Push and `reverse()` once at the end for O(n). |
+| Gauss-sum trick for the missing number *(see [13-dsa.md](./13-dsa.md))* | Only valid with no duplicates — and their own sample input contains `17` twice, so the trick returns the wrong answer on it. |
 
 One more worth knowing: the arrow-function `this` quiz answer (`Ginny, undefined, undefined, undefined`) assumes a non-strict classic script. In an ES module or strict mode, top-level `this` is `undefined`, so those calls **throw** rather than returning `undefined`.

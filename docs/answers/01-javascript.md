@@ -1,4 +1,4 @@
-# Answer Bank 1 — JavaScript Core & Async
+# JavaScript — Core & Async
 
 Model answers for the ★★★ / ★★ items in [`../frontend-knowledge-map.md`](../frontend-knowledge-map.md) §1–§2. This is the layer that produced more rejections than any other in the corpus.
 
@@ -654,4 +654,4 @@ The corpus is explicit that interviewers want **where these are useful in real f
 
 ---
 
-*Next: [`02-react.md`](./02-react.md) — reconciliation, hooks, re-render control, and component patterns.*
+*Next: [`02-react-core.md`](./02-react-core.md) — reconciliation, hooks, re-render control, and component patterns.*

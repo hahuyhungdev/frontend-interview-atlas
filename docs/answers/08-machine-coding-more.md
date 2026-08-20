@@ -1,6 +1,6 @@
-# Answer Bank 9 — Machine Coding, Part 2
+# Machine Coding — More Components
 
-Completes §8 of [`03-machine-coding.md`](./03-machine-coding.md), which listed these eight components as specs only. Each one below is a full working implementation with the reasoning that gets graded.
+Completes §8 of [`07-machine-coding-core.md`](./07-machine-coding-core.md), which listed these eight components as specs only. Each one below is a full working implementation with the reasoning that gets graded.
 
 Same rubric as Part 1: component API, all four UI states, accessibility, edge cases, cleanup, trade-offs said out loud.
 
@@ -412,7 +412,7 @@ function Tooltip({ label, children, id }) {
 **Four graded details:**
 
 1. **Measure, don't assume.** `getBoundingClientRect()` on both target and tooltip, then flip and clamp. Hardcoding `top: -40px` fails the moment the tooltip is near an edge.
-2. **Portal to `body`.** An ancestor with `overflow: hidden` or a `transform` (which creates a stacking context) will clip or trap a nested tooltip. This is the stacking-context trap from `04-css-a11y-design.md` in practice.
+2. **Portal to `body`.** An ancestor with `overflow: hidden` or a `transform` (which creates a stacking context) will clip or trap a nested tooltip. This is the stacking-context trap from `05-css.md` in practice.
 3. **Focus as well as hover**, plus Escape to dismiss. Hover-only tooltips are invisible to keyboard users.
 4. **`aria-describedby`**, not `aria-label` — the tooltip *describes* the target, it does not replace its name.
 
@@ -575,4 +575,4 @@ If you can articulate those four while you build, the specific component barely 
 
 ---
 
-*Next: [`10-dsa.md`](./10-dsa.md) — the algorithm problems the corpus actually asked.*
+*Next: [`13-dsa.md`](./13-dsa.md) — the algorithm problems the corpus actually asked.*

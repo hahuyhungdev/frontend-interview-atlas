@@ -1,4 +1,4 @@
-# Answer Bank 10 — DSA for Frontend
+# DSA for Frontend
 
 Fills §19 of the [knowledge map](../frontend-knowledge-map.md), which was marked ★★ but had no answer file. Every problem below was **actually asked** in the crawled corpus, with the company named.
 

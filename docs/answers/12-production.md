@@ -1,4 +1,4 @@
-# Answer Bank 8 — Production Engineering
+# Production Engineering
 
 The work that never appears in an interview write-up, because nobody interviews on it — and which is most of the actual job. Fills Part 2 of [`../core-insights.md`](../core-insights.md).
 

@@ -1,4 +1,4 @@
-# Answer Bank 3 — Machine Coding
+# Machine Coding — Core Components
 
 Reference implementations for the component catalog (§13 of the [knowledge map](../frontend-knowledge-map.md)), ordered by corpus frequency.
 
@@ -341,7 +341,7 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
 
 # 4. Recursive Tree — File Explorer / Nested Comments ★★★
 
-Component and immutable-update code are in [`02-react.md` §4](./02-react.md). The additional pieces for the file-explorer variant:
+Component and immutable-update code are in [`02-react-core.md` §4](./02-react-core.md). The additional pieces for the file-explorer variant:
 
 ```javascript
 // Delete anywhere in the tree
@@ -555,9 +555,9 @@ function useCart() {
 
 # 8. Others — Key Insight
 
-> **Full implementations for everything in this section are in [`09-machine-coding-part-2.md`](./09-machine-coding-part-2.md).** The summaries below are the one-line takeaway for each.
+> **Full implementations for everything in this section are in [`08-machine-coding-more.md`](./08-machine-coding-more.md).** The summaries below are the one-line takeaway for each.
 
-**Dynamic n×n grid (Okta ×2)** — full solution in [`02-react.md` §3](./02-react.md). Key insight: derive the max from the grid; clone only the touched row.
+**Dynamic n×n grid (Okta ×2)** — full solution in [`02-react-core.md` §3](./02-react-core.md). Key insight: derive the max from the grid; clone only the touched row.
 
 **Tooltip with positioning (LinkedIn)**
 ```javascript
@@ -600,4 +600,4 @@ That last step is the one candidates skip and interviewers weight most.
 
 ---
 
-*Next: [`04-css-a11y-design.md`](./04-css-a11y-design.md) — CSS, accessibility, system design, and behavioral.*
+*Next: [`05-css.md`](./05-css.md) — CSS, accessibility, system design, and behavioral.*

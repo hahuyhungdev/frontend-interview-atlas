@@ -1,4 +1,4 @@
-# Answer Bank 5 — Testing
+# Testing
 
 Fills §17 of the [knowledge map](../frontend-knowledge-map.md), which had **zero coverage** across all 23 crawled articles. Not one round in the corpus asked about testing. That's a property of this author's slice of the market, not of the profession — and it's the largest gap between "passes interviews" and "is good at the job."
 
@@ -246,4 +246,4 @@ Red → green → refactor. The refactor step is the one people skip, and it's w
 
 ---
 
-*Next: [`06-security.md`](./06-security.md)*
+*Next: [`11-security.md`](./11-security.md)*

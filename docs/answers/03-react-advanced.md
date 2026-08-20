@@ -1,6 +1,6 @@
-# Answer Bank 12 — React in Depth
+# React — Advanced Patterns & React 19
 
-[`02-react.md`](./02-react.md) covers the reconciliation model, hooks, re-render control and the core patterns. This file covers what it did not reach: the escape hatches, error handling, concurrent features in practice, React 19's APIs, and the composition patterns that separate library-quality components from app-quality ones.
+[`02-react-core.md`](./02-react-core.md) covers the reconciliation model, hooks, re-render control and the core patterns. This file covers what it did not reach: the escape hatches, error handling, concurrent features in practice, React 19's APIs, and the composition patterns that separate library-quality components from app-quality ones.
 
 ---
 
@@ -247,7 +247,7 @@ async function submit(formData) {
 }
 ```
 
-The revert-on-failure is automatic, which removes the snapshot-and-rollback boilerplate from `07-modern-react-data.md`.
+The revert-on-failure is automatic, which removes the snapshot-and-rollback boilerplate from `04-react-data.md`.
 
 ### 8. Other React 19 changes worth knowing
 
@@ -291,7 +291,7 @@ function Wrapper({ children }) { const [n, setN] = useState(0); return <div>{chi
 
 ### 10. State reducers and controllable state
 
-The pattern behind every serious component library — let consumers control state when they need to, manage it internally when they don't. Full `useControllableState` implementation is in [`02-react.md` §4](./02-react.md).
+The pattern behind every serious component library — let consumers control state when they need to, manage it internally when they don't. Full `useControllableState` implementation is in [`02-react-core.md` §4](./02-react-core.md).
 
 **The state reducer pattern** goes further, letting consumers intercept state transitions:
 

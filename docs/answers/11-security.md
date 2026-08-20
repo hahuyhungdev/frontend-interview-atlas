@@ -1,4 +1,4 @@
-# Answer Bank 6 — The Browser Security Model
+# Security & the Browser Model
 
 Fills §18 of the [knowledge map](../frontend-knowledge-map.md). The corpus mentions XSS exactly once, in passing, during Okta's Markdown-rendering design discussion. This is the model underneath.
 
@@ -215,4 +215,4 @@ Run this over any feature touching user input, auth, or third-party data:
 
 ---
 
-*Next: [`07-modern-react-data.md`](./07-modern-react-data.md)*
+*Next: [`04-react-data.md`](./04-react-data.md)*

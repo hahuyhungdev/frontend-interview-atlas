@@ -1,4 +1,4 @@
-# Answer Bank 7 — Modern React, Data Fetching & TypeScript as Design
+# React — Data Fetching, State & TypeScript
 
 Fills the ○ items in §11–§12 of the [knowledge map](../frontend-knowledge-map.md). The corpus is frozen around 2021: it frames rendering as a CSR/SSR/SSG menu, treats state management as "which library," and treats TypeScript as annotation syntax. All three framings are now out of date, and this is where a 2026 senior interview will probe if the interviewer is current.
 
@@ -299,4 +299,4 @@ const user = UserSchema.parse(await res.json());   // runtime + compile-time tru
 
 ---
 
-*Next: [`08-production-engineering.md`](./08-production-engineering.md)*
+*Next: [`12-production.md`](./12-production.md)*

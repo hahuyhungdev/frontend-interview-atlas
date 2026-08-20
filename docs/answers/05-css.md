@@ -1,4 +1,4 @@
-# Answer Bank 11 — CSS in Depth
+# CSS & Layout
 
 §5 of the [knowledge map](../frontend-knowledge-map.md) is marked ★★ but got only a short section in `04`. CSS is where React-first candidates lose rounds — it cost people at Amazon, BrowserStack, LinkedIn and Apple in this corpus, all of whom ran live layout exercises.
 
@@ -407,4 +407,4 @@ Instantly reveals overflow, unexpected margins and misalignment.
 
 ---
 
-*Next: [`12-react-deep.md`](./12-react-deep.md) — React beyond hooks and re-renders.*
+*Next: [`03-react-advanced.md`](./03-react-advanced.md) — React beyond hooks and re-renders.*
